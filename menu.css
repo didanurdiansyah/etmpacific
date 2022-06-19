@@ -1,0 +1,93 @@
+.menu {
+    margin-top: 150px;
+}
+
+.item-menu {
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 1px;
+    padding-left: 5px;
+    border: 3px solid transparent;
+    position: relative;
+}
+
+.item-menu span {
+    margin-left: 35px;
+}
+
+.active.item-menu span{
+    color: #654DEE;
+}
+
+.active.item-menu{
+    border-left: 3px solid #654DEE;
+}
+
+.item-menu:hover span {
+    color: #654DEE;
+}
+
+.item-menu:hover {
+    border-left: 3px solid #654DEE;
+}
+
+.border-right {
+    border-right: 1px solid #A3AAF5;
+    padding: 0px;
+    height: 100%;
+}
+
+.dashboard_icon {
+    top: -3px;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background-color: black;
+    -webkit-mask: url(/img/svg/darhboard_alt.svg) no-repeat center;
+    mask: url(/img/svg/darhboard_alt.svg) no-repeat center;
+}
+
+.cpu_icon {
+    top: -3px;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background-color: black;
+    -webkit-mask: url(/img/svg/cpu.svg) no-repeat center;
+    mask: url(/img/svg/cpu.svg) no-repeat center;
+}
+
+.bag_icon {
+    top: -3px;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background-color: black;
+    -webkit-mask: url(/img/svg/bag.svg) no-repeat center;
+    mask: url(/img/svg/bag.svg) no-repeat center;
+}
+
+.book_open_icon {
+    top: -3px;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background-color: black;
+    -webkit-mask: url(/img/svg/book_open.svg) no-repeat center;
+    mask: url(/img/svg/book_open.svg) no-repeat center;
+}
+
+.active.item-menu .dashboard_icon,
+.item-menu:hover .dashboard_icon,
+.active.item-menu .bag_icon,
+.item-menu:hover .bag_icon,
+.active.item-menu .book_open_icon,
+.item-menu:hover .book_open_icon,
+.active.item-menu .cpu_icon,
+.item-menu:hover .cpu_icon {
+    background-color: #654DEE;
+}
+

@@ -1,0 +1,17 @@
+.itm-chart-bar {
+    width: 18px;
+    padding: 4px;
+}
+
+.top-itm-chart-bar {
+    background-color: #FAD5E1;
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.bottom-itm-chart-bar {
+    background-color: #BDC3FF;
+    border-radius: 6px;
+    width: 100%;
+}

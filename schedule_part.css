@@ -1,0 +1,82 @@
+.schedule-part {
+    margin-top: 40px;
+}
+
+.schedule-title {
+    display: flex;
+}
+
+.schedule-body {
+    margin-top: 10px;
+}
+
+.see-all {
+    font-size: 12px;
+    margin-left: auto;
+    cursor: pointer;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+
+.see-all:hover {
+    color: #fff;
+    transition: color 0.1s linear;
+}
+
+.schedule {
+    font-weight: 700;
+}
+
+.date-box {
+    padding: 10px;
+    text-align: center;
+}
+
+.date-box-schedule {
+    padding: 10px 16px;
+    text-align: center;
+    border-right: 1px solid #fff;
+}
+
+.date-box-schedule .day {
+    color: #BDC3FF;
+    font-size: 14px;
+}
+
+.date-box-schedule .date {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.alarm-box-schedule {
+    width: 50%;
+    padding-top: 13px;
+    padding-left: 15px;
+}
+
+.alarm-box-schedule .alarm-name {
+    font-size: 14px;
+}
+
+.alarm-box-schedule .alarm-desc {
+    font-size: 12px;
+    font-weight: 100;
+}
+
+.time-schedule {
+    padding-top: 23px;
+    padding-left: 15px;
+    padding-bottom: 15px;
+    font-size: 14px;
+}
+
+.item-schedule {
+    cursor: pointer;
+    margin-bottom: 15px;
+    box-shadow: 0px 0px 0px #654DEE;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.item-schedule:hover {
+    box-shadow: 0px 0px 15px #654DEE;
+}

@@ -1,0 +1,285 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.burger-menu {
+    margin-right: 15px;
+    display: none;
+}
+
+.navbar {
+    position: absolute;
+    width: 100%;
+}
+
+.navbar-mobile {
+    padding: 10px;
+    position: absolute;
+}
+
+.navbar-mobile .logo {
+    padding-right: 20px;
+}
+
+.item-menu-m {
+    padding: 5px 12px;
+}
+
+.main-layout {
+    display: flex;
+    height: 100%;
+}
+
+.btn-img {
+    margin: 0px 5px;
+    cursor: pointer;
+}
+
+.btn-img:hover {
+    filter: invert(32%) sepia(57%) saturate(3263%) hue-rotate(242deg) brightness(68%) contrast(103%);
+    transition: filter 0.1s linear;
+}
+
+.btn-img-circle {
+    background-color: #9d8ef0;
+    border-radius: 10px;
+    padding: 1px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.btn-img-grp {
+    margin-right: -10px;
+    cursor: pointer;
+}
+
+.container-fluid {
+    padding: 0px;
+}
+
+.section-menu {
+    width: 30%; 
+    padding: 20px; 
+    padding-top: 60px;
+}
+
+.section-chart {
+    width: 35%;
+    padding: 20px;
+}
+
+.section-inroduction {
+    width: 35%;
+    padding-top: 60px;
+}
+
+.bg-purple {
+    background-color: #d5d9ff;
+}
+
+.introduction {
+    margin-top: 10px;
+}
+
+.btn-primary {
+    background-color: #654DEE;
+    border-color: #654DEE;
+    font-size: 12px;
+    padding: 8px 20px;
+}
+
+.list-device {
+    margin-top: 50px;
+}
+
+h2 {
+    font-weight: 700;
+    width: 70%;
+}
+
+.desc {
+    font-weight: 100;
+    width: 90%;
+}
+
+
+@media (min-width: 300px) {
+    .burger-menu {
+        display: inline;
+    }
+    .mobile-menu {
+        display: none !important;
+    }
+    .navbar-mobile {
+        display: block;
+    }
+    .main-layout {
+        display: block;
+        height: 100%;
+    }
+    .section-chart {
+        margin-top: 40px;
+        width: 100%;
+    }
+    .section-inroduction {
+        width: 100%;
+        padding-bottom: 50px;
+    }
+    .section-menu {
+        display: none;
+    }
+    .desc {
+        width: 100%;
+    }
+    .introduction h2{
+        width: 100%;
+    }
+}
+
+@media (min-width: 800px) {
+    .burger-menu {
+        display: none;
+    }
+    .mobile-menu {
+        display: flex !important;
+    }
+    .main-layout {
+        display: flex;
+        height: 100%;
+    }
+    .section-chart {
+        width: 50%;
+    }
+    .section-inroduction {
+        width: 50%;
+    }
+    .section-menu {
+        display: none;
+    }
+    .desc {
+        width: 100%;
+    }
+    .introduction h2{
+        width: 100%;
+    }
+}
+
+@media (min-width: 900px) {
+    .navbar-mobile {
+        display: block;
+    }
+    .section-chart {
+        width: 50%;
+    }
+    .section-inroduction {
+        width: 50%;
+    }
+    .section-menu {
+        display: none;
+    }
+    .desc {
+        width: 100%;
+    }
+    .introduction h2{
+        width: 100%;
+    }
+}
+
+
+@media (min-width: 1000px) {
+    .navbar-mobile {
+        display: none;
+    }
+    .section-chart {
+        width: 42%;
+    }
+    .section-inroduction {
+        width: 40%;
+    }
+    .section-menu { 
+        width: 18%;
+        padding-left: 10px;
+    }
+    .section-menu {
+        display: block;
+    }
+    .desc {
+        width: 100%;
+    }
+    .introduction h2{
+        width: 100%;
+    }
+    .logo img {
+        width: 130px;
+        margin-left: -10px;
+    }
+}
+
+@media (min-width: 1100px) {
+    .navbar-mobile {
+        display: none;
+    }
+    .section-chart {
+        width: 42%;
+    }
+    .section-inroduction {
+        width: 38%;
+    }
+    .section-menu { 
+        width: 20%;
+    }
+    .section-menu {
+        display: block;
+    }
+    .desc {
+        width: 100%;
+    }
+    .introduction h2{
+        width: 100%;
+    }
+    .logo img {
+        width: 180px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .navbar-mobile {
+        display: none;
+    }
+    .section-chart {
+        width: 37%;
+    }
+    .section-inroduction {
+        width: 37%;
+    }
+    .section-menu { 
+        width: 26%;
+    }
+    .section-menu {
+        display: block;
+    }
+    .logo img {
+        width: 180px;
+    }
+}
+
+@media (min-width: 1300px) {
+    .navbar-mobile {
+        display: none;
+    }
+    .section-chart {
+        width: 35%;
+    }
+    .section-inroduction {
+        width: 35%;
+    }
+    .section-menu { 
+        width: 30%;
+    }
+    .section-menu {
+        display: block;
+    }
+    .logo img {
+        width: 180px;
+    }
+}

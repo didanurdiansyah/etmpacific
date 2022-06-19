@@ -1,0 +1,146 @@
+.calender-part {
+    margin-top: 40px;
+}
+
+.calender-title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.calender-body {
+    display: flex;
+    justify-content: space-between;
+}
+
+.chart-slide {
+    height: 280px; 
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.month-year-calender {
+    font-weight: 700;
+}
+
+.nav img {
+    display: inline;
+    margin-left: 5;
+    cursor: pointer;
+}
+
+.nav {
+    /* margin-left: auto; */
+}
+
+.card-chart-title {
+    display: flex;
+}
+
+.card-chart-title img {
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.chart-column {
+    margin-top: 28px;
+}
+
+.h-line {
+    width: 1px;
+    margin-top: 17px;
+    height: 65px;
+    border-right: 1px solid #EEE;
+}
+
+.calender-item {
+    margin-top: 10px;
+}
+
+.card-calender {
+    /* width: 68px; */
+    padding: 1rem;
+    border-radius: 12px;
+    text-align: center;
+    background-color: #fff;   
+}
+
+.card-calender:hover {
+    border-right: 1px solid transparent;
+    box-shadow: 0px 0px 16px #dedede;
+    transform: scale(1.03);
+    z-index: 2;
+    transition: transform 0.1s ease-in-out;
+}
+
+.calender-item.end {
+    border: 0px;
+}
+
+.calender-item .day-name-calender {
+    color: #BDC3FF;
+}
+
+.date-calender {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.chart-column-title {
+    font-weight: 700;
+}
+
+.chart-column-body {
+    margin-top: 10px;
+    display: flex;
+}
+
+.nav-chart-calendar {
+    text-align: center;
+    padding: 15px;
+    width: 150px;
+}
+
+.nav-year {
+    font-size: 18px;
+    color: #BDC3FF;
+}
+
+.nav-year img{
+    margin: 0px 10px;
+    cursor: pointer;
+}
+
+.nav-year img:hover{
+    filter: brightness(0);
+    transition: filter 0.2s ease-in-out;
+}
+
+.counter-degree {
+    margin-top: 20px;
+    font-size: 48px;
+    font-weight: 100;
+    position: relative;
+}
+
+.card-chart {
+    box-shadow: 0px 0px 20px #ddd;
+    height: 200px;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.counter-degree img {
+    position: relative;
+}
+
+.carousel-item {
+    padding: 20px;
+    height: 270px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.carousel-indicators button {
+    background-color: #444;
+}

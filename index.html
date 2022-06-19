@@ -1,0 +1,369 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modal</title>
+    <!-- bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+    />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500;700&display=swap" rel="stylesheet">
+    <!-- styles -->
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="menu.css" />
+    <link rel="stylesheet" href="product_part.css" />
+    <link rel="stylesheet" href="schedule_part.css" />
+    <link rel="stylesheet" href="column_chart.css" />
+    <link rel="stylesheet" href="chart_bar.css" />
+
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+  </head>
+  <body>
+    <div class="navbar">
+      <div style="margin-left: auto;"> 
+        <img class="btn-img" src="/img/svg/search.svg" width="22"/>
+        <img class="btn-img" src="/img/svg/bell_pin.svg" width="22"/>
+        <img class="btn-img" src="/img/svg/chat_alt.svg" width="22"/>
+        <img class="btn-img-grp" src="/img/png/Ellipse 10.png" width="22"/>
+        <img class="btn-img-grp" src="/img/png/Ellipse 11.png" width="22"/>
+        <img class="btn-img-grp" src="/img/png/Ellipse 4.png" width="22"/>
+        <img class="btn-img-circle" src="/img/svg/add_round2.svg" width="20"/>
+      </div>
+    </div>
+    <div class="navbar-mobile">
+      <div class="d-flex">
+        <div class="logo">
+          <img class="burger-menu" src="/img/svg/bars-solid.svg" width="30"/>
+          <img src="https://2byx5s3kj1fi3f82w42cq9q1-wpengine.netdna-ssl.com/wp-content/uploads/2021/04/logo.png" width="120" />
+        </div>
+        <div class="d-flex mobile-menu">
+          <div class="item-menu-m active">
+            <span class="align-middle">Dashboard</span>
+          </div>
+          <div class="item-menu-m">
+            <span class="align-middle">Product</span>
+          </div>
+          <div class="item-menu-m">
+            <span class="align-middle">Pricing</span>
+          </div>
+          <div class="item-menu-m">
+            <span class="align-middle">Docs</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="main-layout">
+        <div class="bg-purple section-menu">
+          <div class="border-right d-flex justify-content-center">
+            <div style="height: 90vh;">
+              <div class="logo">
+                <img src="https://2byx5s3kj1fi3f82w42cq9q1-wpengine.netdna-ssl.com/wp-content/uploads/2021/04/logo.png" width="180" />
+              </div>
+              <div class="menu">
+                <div class="item-menu active">
+                  <div class="dashboard_icon"></div>
+                  <!-- <img src="/img/svg/darhboard_alt.svg" width="20" /> -->
+                  <span class="align-middle">Dashboard</span>
+                </div>
+                <div class="item-menu">
+                  <div class="cpu_icon"></div>
+                  <span class="align-middle">Product</span>
+                </div>
+                <div class="item-menu">
+                  <div class="bag_icon"></div>
+                  <span class="align-middle">Pricing</span>
+                </div>
+                <div class="item-menu">
+                  <div class="book_open_icon"></div>
+                  <span class="align-middle">Docs</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bg-purple ps-3 pe-3 section-inroduction">
+          <div class="introduction">
+            <h2>👋🏻 Good morning, Engineer</h2>
+            <div class="desc">Find out how many easy it is to make your home comfortable, more functional and more</div>
+          </div>
+          <div class="list-device">
+            <button type="button" class="btn btn-primary">
+              Device List
+            </button>
+          </div>
+          <div class="product-part">
+            <div class="title-part">
+              My Product
+              <img class="btn-more" src="/img/svg/group3.svg" width="26" />
+            </div>
+            <div class="body-part">
+              <div class="box-white">
+                <img src="/img/svg/temperature.svg" width="42" />
+              </div>
+              <div class="box-white">
+                <img src="/img/svg/cpu2.svg" width="42" />
+              </div>
+              <div class="box-white">
+                <img src="/img/svg/home.svg" width="42" />
+              </div>
+              <div class="box-white">
+                <img src="/img/svg/lamp.svg" width="42" />
+              </div>
+              <div class="box-white">
+                <img src="/img/svg/add_round.svg" width="42" />
+              </div>
+            </div>
+          </div>
+          <div class="schedule-part">
+            <div class="schedule-title">
+              <div class="schedule">Schedule</div>
+              <div class="see-all">See all</div>
+            </div>
+            <div class="rounded-2 item-schedule bg-white d-flex mt-2 schedule-body">
+              <div class="date-box-schedule">
+                <div class="day">
+                  Sat
+                </div>
+                <div class="date">
+                  21
+                </div>
+              </div>
+              <div class="alarm-box-schedule">
+                <div class="alarm-name">Alarm Home</div>
+                <div class="alarm-desc">Got To Work</div>
+              </div>
+              <div class="time-schedule">
+                8:00 am - 12:00 am
+              </div>
+            </div>
+            <div class="rounded-2 item-schedule bg-white d-flex mt-2">
+              <div class="date-box-schedule">
+                <div class="day">
+                  Sat
+                </div>
+                <div class="date">
+                  21
+                </div>
+              </div>
+              <div class="alarm-box-schedule">
+                <div class="alarm-name">Alarm Home</div>
+                <div class="alarm-desc">Come back at home</div>
+              </div>
+              <div class="time-schedule">
+                2:00 pm - 6:00 pm
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section-chart">
+          <div class="chart-slide">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active" style="padding-left: 40px; padding-right: 40px;">
+                  <div class="card-chart">
+                    <div class="card-chart-title">
+                      Pie Chart
+                      <img class="btn-view" src="/img/svg/eye.svg" width="20" />
+                    </div>
+                    <div class="card-chart-body">
+                      <div id="pie-chart"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="card-chart">
+                    <div class="card-chart-title">
+                      Pie Chart A
+                      <img class="btn-view" src="/img/svg/eye.svg" width="20" />
+                    </div>
+                    <div class="card-chart-body">
+                      <div id="pie-chart2"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="card-chart">
+                    <div class="card-chart-title">
+                      Pie Chart B
+                      <img class="btn-view" src="/img/svg/eye.svg" width="20" />
+                    </div>
+                    <div class="card-chart-body">
+                      <div id="pie-chart3"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- <div>nav</div> -->
+          </div>
+          <div class="calender-part">
+            <div class="calender-title">
+              <div id="" class="month-year-calender">August 2021</div>
+              <div class="nav">
+                <img src="/img/svg/prev.svg" width="10"/>
+                <img src="/img/svg/next.svg" width="10"/>
+              </div>
+            </div>
+            <div class="calender-body">
+              <div class="calender-item">
+                <div class="card-calender">
+                  <div class="day-name-calender">Fri</div>
+                  <div class="date-calender">20 </div>
+                </div>
+              </div>
+              <div class="h-line"></div>
+              <div class="calender-item">
+                <div class="card-calender">
+                  <div class="day-name-calender">Fri</div>
+                  <div class="date-calender">21 </div>
+                </div>
+              </div>
+              <div class="h-line"></div>
+              <div class="calender-item">
+                <div class="card-calender">
+                  <div class="day-name-calender">Fri</div>
+                  <div class="date-calender">22 </div>
+                </div>
+              </div>
+              <div class="h-line"></div>
+              <div class="calender-item">
+                <div class="card-calender">
+                  <div class="day-name-calender">Fri</div>
+                  <div class="date-calender">23 </div>
+                </div>
+              </div>
+              <div class="h-line"></div>
+              <div class="calender-item">
+                <div class="card-calender">
+                  <div class="day-name-calender">Fri</div>
+                  <div class="date-calender">24 </div>
+                </div>
+              </div>
+              <div class="h-line"></div>
+              <div class="calender-item">
+                <div class="card-calender">
+                  <div class="day-name-calender">Fri</div>
+                  <div class="date-calender">25 </div>
+                </div>
+              </div>
+              <div class="h-line"></div>
+              <div class="calender-item end">
+                <div class="card-calender">
+                  <div class="day-name-calender">Fri</div>
+                  <div class="date-calender">26 </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="chart-column">
+            <div class="chart-column-title">Column Chart</div>
+            <div class="chart-column-body">
+              <div class="nav-chart-calendar">
+                <div class="nav-year">
+                  <img src="/img/svg/prev.svg" width="10"/>
+                  2021
+                  <img src="/img/svg/next.svg" width="10"/>
+                </div>
+                <div class="counter-degree">
+                  21°
+                  <img src="/img/svg/arrow.svg" width="19"/>
+                </div>
+              </div>
+              <div class="chart" style="height: 120px; width: calc(100% - 150px);">
+                <div class="d-flex h-100 w-100 justify-content-between">
+                  <div class="itm-chart-bar">
+                    <div class="top-itm-chart-bar" style="height: 20%;"></div>
+                    <div class="bottom-itm-chart-bar" style="height: 80%;"></div>
+                  </div>
+                  <div class="itm-chart-bar">
+                    <div class="top-itm-chart-bar" style="height: 40%;"></div>
+                    <div class="bottom-itm-chart-bar" style="height: 60%;"></div>
+                  </div>
+                  <div class="itm-chart-bar">
+                    <div class="top-itm-chart-bar" style="height: 50%;"></div>
+                    <div class="bottom-itm-chart-bar" style="height: 50%;"></div>
+                  </div>
+                  <div class="itm-chart-bar">
+                    <div class="top-itm-chart-bar" style="height: 42%;"></div>
+                    <div class="bottom-itm-chart-bar" style="height: 58%;"></div>
+                  </div>
+                  <div class="itm-chart-bar">
+                    <div class="top-itm-chart-bar" style="height: 32%;"></div>
+                    <div class="bottom-itm-chart-bar" style="height: 68%;"></div>
+                  </div>
+                  <div class="itm-chart-bar">
+                    <div class="top-itm-chart-bar" style="height: 52%;"></div>
+                    <div class="bottom-itm-chart-bar" style="height: 48%;"></div>
+                  </div>
+                  <div class="itm-chart-bar">
+                    <div class="top-itm-chart-bar" style="height: 72%;"></div>
+                    <div class="bottom-itm-chart-bar" style="height: 28%;"></div>
+                  </div>
+                  <div class="itm-chart-bar">
+                    <div class="top-itm-chart-bar" style="height: 92%;"></div>
+                    <div class="bottom-itm-chart-bar" style="height: 8%;"></div>
+                  </div>
+                  <div class="itm-chart-bar">
+                    <div class="top-itm-chart-bar" style="height: 82%;"></div>
+                    <div class="bottom-itm-chart-bar" style="height: 18%;"></div>
+                  </div>
+                  <div class="itm-chart-bar">
+                    <div class="top-itm-chart-bar" style="height: 72%;"></div>
+                    <div class="bottom-itm-chart-bar" style="height: 28%;"></div>
+                  </div>
+                  <div class="itm-chart-bar">
+                    <div class="top-itm-chart-bar" style="height: 62%;"></div>
+                    <div class="bottom-itm-chart-bar" style="height: 38%;"></div>
+                  </div>
+                  <div class="itm-chart-bar">
+                    <div class="top-itm-chart-bar" style="height: 52%;"></div>
+                    <div class="bottom-itm-chart-bar" style="height: 48%;"></div>
+                  </div>
+                  <div class="itm-chart-bar">
+                    <div class="top-itm-chart-bar" style="height: 42%;"></div>
+                    <div class="bottom-itm-chart-bar" style="height: 58%;"></div>
+                  </div>
+                  <div class="itm-chart-bar">
+                    <div class="top-itm-chart-bar" style="height: 52%;"></div>
+                    <div class="bottom-itm-chart-bar" style="height: 48%;"></div>
+                  </div>
+                  <div class="itm-chart-bar">
+                    <div class="top-itm-chart-bar" style="height: 82%;"></div>
+                    <div class="bottom-itm-chart-bar" style="height: 18%;"></div>
+                  </div>
+                  <div class="itm-chart-bar">
+                    <div class="top-itm-chart-bar" style="height: 62%;"></div>
+                    <div class="bottom-itm-chart-bar" style="height: 38%;"></div>
+                  </div>
+                  <div class="itm-chart-bar">
+                    <div class="top-itm-chart-bar" style="height: 22%;"></div>
+                    <div class="bottom-itm-chart-bar" style="height: 78%;"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://getbootstrap.com/docs/5.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="column_chart.js"></script>
+    <script src="chart.js"></script>
+  </body>
+</html>
