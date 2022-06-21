@@ -1,0 +1,260 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modal</title>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- styles -->
+    <link rel="stylesheet" href="index2.css" />
+  </head>
+  <body>
+    <div class="containter">
+      <div class="header">
+        <div class="top-page-title">
+          Settings: 
+          <select class="transparant-select">
+            <option>Device 1</option>
+            <option>Device 2</option>
+            <option>Device 3</option>
+          </select>
+        </div>
+        <div class="top-menu">
+          <a class="item-top-menu">Device Settings</a>
+          <a class="item-top-menu">Remote Settings</a>
+          <a class="item-top-menu">FOTA/COTA</a>
+          <a class="item-top-menu">Terminal</a>
+        </div>
+      </div>
+      <div class="main-layout">
+        <div class="menu-contain">
+          <div class="menu">
+            <div class="item-menu">General</div>
+            <div class="item-menu">
+              <div id="general" class="item-menu-parent">
+                Channel
+                <div class="navigator">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7 10L12 15L17 10H7Z"
+                      fill="#000035"
+                      fill-opacity="0.7"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div class="item-menu-child general">
+                <div class="item-menu">Power In monitoring</div>
+                <div class="item-menu">Channels 1-7</div>
+              </div>
+            </div>
+            <div class="item-menu">Calibration</div>
+            <div class="item-menu">Communications</div>
+            <div class="item-menu">Data Logging and Timer Settings</div>
+          </div>
+        </div>
+        <div class="layout">
+          <div class="big-title">
+            <div class="page-title">General (?)</div>
+            <div class="section-title">SMS Alarming</div>
+          </div>
+          <div class="form-first">
+            <div class="card no-padding-left card-recipitient">
+              <div class="card-title">Recipitients</div>
+              <div>
+                <div class="flex">
+                  <div class="p-2">1</div>
+                  <div class="w-auto">
+                    <input
+                      class="input-text-form"
+                      type="text"
+                      id="recipitient-1"
+                      placeholder="Phone number"
+                      name="recipitient1"
+                    />
+                  </div>
+                </div>
+                <div class="flex">
+                  <div class="p-2">2</div>
+                  <div class="w-auto">
+                    <input
+                      class="input-text-form"
+                      type="text"
+                      id="recipitient-2"
+                      placeholder="Phone number"
+                      name="recipitient2"
+                    />
+                  </div>
+                </div>
+                <div class="flex">
+                  <div class="p-2">3</div>
+                  <div class="w-auto">
+                    <input
+                      class="input-text-form"
+                      type="text"
+                      id="recipitient-3"
+                      placeholder="Phone number"
+                      name="recipitient3"
+                    />
+                  </div>
+                </div>
+                <div class="flex">
+                  <div class="p-2">4</div>
+                  <div class="w-auto">
+                    <input
+                      class="input-text-form"
+                      type="text"
+                      id="recipitient-4"
+                      placeholder="Phone number"
+                      name="recipitient4"
+                    />
+                  </div>
+                </div>
+                <div class="flex">
+                  <div class="p-2">5</div>
+                  <div class="w-auto">
+                    <input
+                      class="input-text-form"
+                      type="text"
+                      id="recipitient-5"
+                      placeholder="Phone number"
+                      name="recipitient5"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card card-message">
+              <div class="card-title">Messege</div>
+              <div class="w-auto">
+                <textarea
+                  rows="6"
+                  class="input-text-area textarea-form"
+                  placeholder="Start typing your messege"
+                  width="100%"
+                ></textarea>
+              </div>
+              <div class="info-char">0/150</div>
+            </div>
+            <div class="card card-sms-amount">
+              <div class="card-title">SMS Amount</div>
+              <div class="card-body">
+                <div class="flex">
+                  <span class="mr-3">Maximum of</span>
+                  <input
+                    class="input-number input-text-form"
+                    placeholder="Number"
+                    width="4px"
+                  />
+                  <span class="ml-3">SMS sent every 24 hour</span>
+                </div>
+                <div class="info">
+                  Tnis counter will be cleared at 00:00 hour (midnight)
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-second">
+            <div class="card no-padding-left card-command">
+              <div class="card-title bold">Init AT/ET - Command Table</div>
+              <div class="card-body">
+                <div class="flex">
+                  <div class="p-2">1</div>
+                  <div class="w-auto">
+                    <select class="select-form">
+                      <option class="no-select">Select the command</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="flex">
+                  <div class="p-2">2</div>
+                  <div class="w-auto">
+                    <select class="select-form">
+                      <option class="no-select">Select the command</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="flex">
+                  <div class="p-2">3</div>
+                  <div class="w-auto">
+                    <select class="select-form">
+                      <option class="no-select">Select the command</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="flex">
+                  <div class="p-2">4</div>
+                  <div class="w-auto">
+                    <select class="select-form">
+                      <option class="no-select">Select the command</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="flex">
+                  <div class="p-2">5</div>
+                  <div class="w-auto">
+                    <select class="select-form">
+                      <option class="no-select">Select the command</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card card-analogue">
+              <div class="card-title bold">Analogue Values</div>
+              <div class="card-body">
+                <div class="checkbox">
+                  <input
+                    type="radio"
+                    id="mv"
+                    class="checkbox-input"
+                    name="calibrated"
+                    value="mV"
+                  />
+                  <label for="html">Defult (presented in mV)</label>
+                </div>
+                <div class="checkbox">
+                  <input
+                    type="radio"
+                    id="scaled"
+                    class="checkbox-input"
+                    name="calibrated"
+                    value="scaled"
+                  />
+                  <label for="html">Scaled with calibrated values</label>
+                </div>
+              </div>
+            </div>
+            <div class="card card-preference">
+              <div class="card-title bold">Reference Date</div>
+              <div class="card-body">
+                <div>
+                  <input
+                    class="input-text-form"
+                    type="text"
+                    id="recipitient-2"
+                    placeholder="00-00-00"
+                    name="recipitient2"
+                  />
+                  <!-- <input type="date" class="input-text-form"/> -->
+                </div>
+                <div class="info">Date format: YY-MM-DD</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

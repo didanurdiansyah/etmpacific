@@ -1,0 +1,373 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+}
+
+#container {
+    overflow: auto;
+}
+
+.tbDatasource-container {
+    margin: 5px;
+    padding: 8px;
+}
+
+.tbDatasource-title {
+    font-size: 1.200rem;
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+
+.tbDatasource-table {
+    width: 100%;
+    box-shadow: 0 0 10px #ccc;
+    border-collapse: collapse;
+    white-space: nowrap;
+    font-size: 1.000rem;
+    color: #757575;
+}
+
+.tbDatasource-table td {
+    position: relative;
+    border-top: 1px solid rgba(0, 0, 0, 0.12);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    padding: 0px 18px;
+    box-sizing: border-box;
+}
+
+.card-command,
+.card-recipitient {
+    width: 25%;
+}
+
+.card-analogue,
+.card-message {
+    width: 35%;
+}
+
+.card-preference,
+.card-sms-amount {
+    width: 40%;
+}
+
+.page-title {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 10px 0px;
+}
+
+.section-title {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 10px 0px;
+}
+
+.flex {
+    display: flex;
+    padding-bottom: 8px;
+    width: 100%;
+}
+
+.p-2 {
+    padding: 5px;
+    padding-top: 8px;
+    width: 20px;
+}
+
+.ml-3 {
+    margin-top: 5px;
+    margin-left: 6px;
+}
+
+.mr-3 {
+    margin-top: 5px;
+    margin-right: 6px;
+}
+
+.header {
+    margin-bottom: 30px;
+    height: 70px;
+    box-shadow: 0px 0px 10px #ccc;
+}
+
+.transparant-select {
+    border: 0px;
+    font-size: 24px;
+    margin-left: 10px;
+    width: 160px;
+}
+
+.top-menu {
+    display: flex;
+    margin-right: 10px;
+}
+
+.containter {
+    padding: 10px;
+}
+
+.top-page-title {
+    font-size: 24px;
+    padding: 20px;
+}
+
+.item-top-menu {
+    font-size: 15px;
+    padding: 25px;
+    position: relative;
+    top:2px
+}
+
+.item-top-menu:hover {
+    font-size: 15px;
+    padding: 25px;
+    color: #000;
+    background-color: #164bbd10;
+    border-bottom: 4px solid #164BBD;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-layout {
+    display: flex;
+    box-shadow: 0px 0px 10px #ccc;
+}
+
+.menu {
+    padding: 20px;
+    border-right: 1px solid #eee;
+    height: 80vh;
+}
+
+.menu-contain {
+    padding: 15px 0px;
+    width: 25%;
+}
+
+.layout {
+    width: 75%;
+    padding: 10px;
+
+}
+
+.item-menu.active { 
+    color: #444;
+}
+
+.item-menu {
+    padding: 5px 2px;
+}
+
+.navigator {
+    margin-top: -5px;
+}
+
+.item-menu-parent {
+    display: flex;
+}
+
+.item-menu-child {
+    display: block;
+    margin-left: 10px;
+}
+
+.form-first {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+}
+
+.form-second {
+    padding-top: 20px;
+}
+
+.form-first,
+.form-second {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    padding: 10px;
+}
+
+.card-title {
+    margin-bottom: 10px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.info-char {
+    font-size: 10px;
+    float: right;
+    color: #444;
+}
+
+.info {
+    font-size: 10px;
+    color: #444;
+    margin-top: 5px;
+}
+
+.input-text-form {
+    border: 0px;
+    padding: 8px 10px;
+    background-color: #eee;
+    border-bottom: 1px solid #aaa;
+    width: 100%;
+}
+
+.input-text-area {
+    border: 0px;
+    padding: 5px 7px;
+    background-color: #eee;
+    border-bottom: 1px solid #aaa;
+    width: 100%;
+}
+
+.input-number {
+    width: 80px;
+}
+
+.w-auto {
+    width: 100%
+}
+
+.select-form {
+    border: 0px;
+    padding: 10px 12px;
+    background-color: #eee;
+    border-bottom: 1px solid #aaa;
+    width: 100%;
+}
+
+.no-select {
+    color: #ddd;
+}
+
+.no-padding-left {
+    padding-left: 0px !important;
+}
+
+.checkbox-input:checked {
+    border-color: #444;
+    background-color:#444;
+}
+
+
+@media (min-width: 300px) {
+    .menu {
+        display: none;
+    }
+    .layout {
+        width: 100%;
+    }
+    .no-padding-left {
+        padding: 10px !important;
+    }
+    .card-recipitient,
+    .card-message,
+    .card-command,
+    .card-analogue,
+    .card-preference,
+    .card-sms-amount {
+        width: 90%;
+    }
+}
+
+
+@media (min-width: 700px) {
+    .menu {
+        display: none;
+    }
+    .no-padding-left {
+        padding-left: 0px !important;
+    }
+    .layout {
+        width: 100%;
+    }
+    .card-recipitient,
+    .card-message,
+    .card-command,
+    .card-analogue,
+    .card-preference,
+    .card-sms-amount {
+        width: 45%;
+    }
+
+}
+
+@media (min-width: 1000px) {
+    .menu {
+        display: none;
+    }
+    .layout {
+        width: 100%;
+    }
+    .card-recipitient,
+    .card-message,
+    .card-command,
+    .card-analogue,
+    .card-preference,
+    .card-sms-amount {
+        width: 45%;
+    }
+}
+
+@media (min-width: 1100px) {
+    .menu {
+        display: block;
+    }
+    .card-command,
+    .card-recipitient {
+        width: 25%;
+    }
+    .card-analogue,
+    .card-message {
+        width: 35%;
+    }
+    .card-preference,
+    .card-sms-amount {
+        width: 35%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .menu {
+        display: block;
+    }
+    .card-command,
+    .card-recipitient {
+        width: 25%;
+    }
+    .card-analogue,
+    .card-message {
+        width: 33%;
+    }
+    .card-preference,
+    .card-sms-amount {
+        width: 35%;
+    }
+}
+
+@media (min-width: 1300px) {
+    .menu {
+        display: block;
+    }
+    .card-command,
+    .card-recipitient {
+        width: 25%;
+    }
+    .card-analogue,
+    .card-message {
+        width: 34%;
+    }
+    .card-preference,
+    .card-sms-amount {
+        width: 35%;
+    }
+}
