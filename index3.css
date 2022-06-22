@@ -45,7 +45,8 @@ body {
     font-size: 15px;
     padding: 25px;
     position: relative;
-    top:2px
+    top:2px;
+    color: #000;
 }
 
 .item-top-menu:hover {
@@ -54,6 +55,10 @@ body {
     color: #000;
     background-color: #164bbd10;
     border-bottom: 4px solid #164BBD;
+}
+
+.top-menu-mobile {
+    float: right;
 }
 
 .header {
@@ -79,16 +84,24 @@ body {
 
 .layout {
     width: 75%;
-    padding: 10px;
-
+    padding: 20px;
 }
 
 .item-menu.active { 
-    color: #444;
+    color: #164BBD;
+    font-weight: 700;
 }
 
 .item-menu {
     padding: 5px 2px;
+    font-weight: 700;
+    color: #000;
+}
+
+.item-menu:hover {
+    color: #164BBD;
+    font-weight: 700;
+    cursor: pointer;
 }
 
 .navigator {
@@ -246,6 +259,17 @@ body {
 .flex-x-label {
     padding: 15px;
     width: 40px;
+}
+
+.btn-link {
+    float: right;
+    margin-top: 10px;
+    cursor: pointer;
+    color: #164BBD;
+}
+
+.btn-link:hover {
+    color: #082f82;
 }
 
 @media (min-width: 300px) {

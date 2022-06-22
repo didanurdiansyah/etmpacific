@@ -75,6 +75,13 @@ body {
     margin-right: 10px;
 }
 
+.top-menu-mobile {
+    display: none;
+    float: right;
+    padding: 18px 20px;
+    cursor: pointer;
+}
+
 .containter {
     padding: 10px;
 }
@@ -82,6 +89,7 @@ body {
 .top-page-title {
     font-size: 24px;
     padding: 20px;
+    width: 330px;
 }
 
 .item-top-menu {
@@ -123,8 +131,7 @@ body {
 
 .layout {
     width: 75%;
-    padding: 10px;
-
+    padding: 20px;
 }
 
 .item-menu.active { 
@@ -134,6 +141,7 @@ body {
 
 .item-menu {
     padding: 5px 2px;
+    font-weight: 700;
     color: #000;
 }
 
@@ -242,6 +250,9 @@ body {
 
 
 @media (min-width: 300px) {
+    .top-menu-mobile {
+        display: flex;
+    }
     .top-menu,
     .menu-contain {
         display: none;
@@ -264,8 +275,11 @@ body {
 
 
 @media (min-width: 700px) {
-    .top-menu {
+    .top-menu-mobile {
         display: flex;
+    }
+    .top-menu {
+        display: none;
     }
     .menu-contain {
         display: none;
@@ -284,7 +298,52 @@ body {
     .card-sms-amount {
         width: 45%;
     }
+}
 
+@media (min-width: 800px) {
+    .top-menu-mobile {
+        display: flex;
+    }
+    .top-menu {
+        display: none;
+    }
+    .menu-contain {
+        display: none;
+    }
+    .layout {
+        width: 100%;
+    }
+    .card-recipitient,
+    .card-message,
+    .card-command,
+    .card-analogue,
+    .card-preference,
+    .card-sms-amount {
+        width: 45%;
+    }
+}
+
+@media (min-width: 900px) {
+    .top-menu-mobile {
+        display: none;
+    }
+    .top-menu {
+        display: flex;
+    }
+    .menu-contain {
+        display: none;
+    }
+    .layout {
+        width: 100%;
+    }
+    .card-recipitient,
+    .card-message,
+    .card-command,
+    .card-analogue,
+    .card-preference,
+    .card-sms-amount {
+        width: 45%;
+    }
 }
 
 @media (min-width: 1000px) {
