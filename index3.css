@@ -1,3 +1,4 @@
+ /* ------ Global CSS ------ */
 body {
     font-family: 'Montserrat', sans-serif;
     font-size: 13px;
@@ -7,54 +8,10 @@ body {
     overflow: auto;
 }
 
-
-.card-command,
-.card-recipitient {
-    width: 25%;
-}
-
-.card-analogue,
-.card-message {
-    width: 35%;
-}
-
-.card-preference,
-.card-sms-amount {
-    width: 40%;
-}
-
 .page-title {
     font-size: 20px;
     font-weight: 700;
     margin: 10px 0px;
-}
-
-.section-title {
-    font-size: 16px;
-    font-weight: 600;
-    margin: 10px 0px;
-}
-
-.flex {
-    display: flex;
-    padding-bottom: 8px;
-    width: 100%;
-}
-
-.p-2 {
-    padding: 5px;
-    padding-top: 8px;
-    width: 20px;
-}
-
-.ml-3 {
-    margin-top: 5px;
-    margin-left: 6px;
-}
-
-.mr-3 {
-    margin-top: 5px;
-    margin-right: 6px;
 }
 
 .header {
@@ -88,8 +45,7 @@ body {
     font-size: 15px;
     padding: 25px;
     position: relative;
-    top:2px;
-    color: #000;
+    top:2px
 }
 
 .item-top-menu:hover {
@@ -128,19 +84,11 @@ body {
 }
 
 .item-menu.active { 
-    color: #164BBD;
-    font-weight: 700;
+    color: #444;
 }
 
 .item-menu {
     padding: 5px 2px;
-    color: #000;
-}
-
-.item-menu:hover {
-    color: #164BBD;
-    font-weight: 700;
-    cursor: pointer;
 }
 
 .navigator {
@@ -163,6 +111,12 @@ body {
 
 .form-second {
     padding-top: 20px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+}
+
+.form-third {
+    padding-top: 20px;
 }
 
 .form-first,
@@ -177,6 +131,10 @@ body {
 
 .card-title {
     margin-bottom: 10px;
+}
+
+.card-body {
+    padding-top: 10px;
 }
 
 .bold {
@@ -197,7 +155,7 @@ body {
 
 .input-text-form {
     border: 0px;
-    padding: 8px 10px;
+    padding: 15px 15px;
     background-color: #eee;
     border-bottom: 1px solid #aaa;
     width: 100%;
@@ -215,8 +173,9 @@ body {
     width: 80px;
 }
 
-.w-auto {
-    width: 100%
+.input-phone-number {
+    width: 180px;
+    margin-right: 10px;
 }
 
 .select-form {
@@ -240,10 +199,57 @@ body {
     background-color:#444;
 }
 
+.button1 {
+    background-color: #164BBD;
+    color: #fff;
+    border: 0px;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #164bbdb9;
+    color: #fff;
+}
+
+/* ------ End Global CSS ------- */
+
+.card-io {
+    width: 30%;
+}
+
+.card-body-unit {
+    display: flex;
+    width: 100%;
+}
+
+.flex-x-input {
+    width: calc(100% - 40px);
+}
+
+.flex-x-input-unit {
+    width: calc(100% - 40px);
+}
+
+.flex-x {
+    padding-top: 10px;
+    display: flex;
+    width: 100%;
+}
+
+.flex-x-item {
+    display: flex;
+    width: 100%;
+}
+
+.flex-x-label {
+    padding: 15px;
+    width: 40px;
+}
 
 @media (min-width: 300px) {
-    .top-menu,
-    .menu-contain {
+    .menu {
         display: none;
     }
     .layout {
@@ -252,22 +258,12 @@ body {
     .no-padding-left {
         padding: 10px !important;
     }
-    .card-recipitient,
-    .card-message,
-    .card-command,
-    .card-analogue,
-    .card-preference,
-    .card-sms-amount {
-        width: 90%;
-    }
+
 }
 
 
 @media (min-width: 700px) {
-    .top-menu {
-        display: flex;
-    }
-    .menu-contain {
+    .menu {
         display: none;
     }
     .no-padding-left {
@@ -276,96 +272,38 @@ body {
     .layout {
         width: 100%;
     }
-    .card-recipitient,
-    .card-message,
-    .card-command,
-    .card-analogue,
-    .card-preference,
-    .card-sms-amount {
-        width: 45%;
-    }
 
 }
 
 @media (min-width: 1000px) {
-    .top-menu {
-        display: flex;
-    }
-    .menu-contain {
+    .menu {
         display: none;
     }
     .layout {
         width: 100%;
     }
-    .card-recipitient,
-    .card-message,
-    .card-command,
-    .card-analogue,
-    .card-preference,
-    .card-sms-amount {
-        width: 45%;
-    }
+
 }
 
 @media (min-width: 1100px) {
-    .top-menu {
-        display: flex;
-    }
-    .menu-contain {
+    .menu {
         display: block;
     }
-    .card-command,
-    .card-recipitient {
-        width: 25%;
-    }
-    .card-analogue,
-    .card-message {
-        width: 35%;
-    }
-    .card-preference,
-    .card-sms-amount {
-        width: 35%;
-    }
+    
 }
 
 @media (min-width: 1200px) {
-    .top-menu {
-        display: flex;
-    }
-    .menu-contain {
+    .menu {
         display: block;
     }
-    .card-command,
-    .card-recipitient {
-        width: 25%;
-    }
-    .card-analogue,
-    .card-message {
-        width: 33%;
-    }
-    .card-preference,
-    .card-sms-amount {
-        width: 35%;
-    }
+
 }
 
 @media (min-width: 1300px) {
-    .top-menu {
-        display: flex;
-    }
-    .menu-contain {
+    .menu {
         display: block;
     }
-    .card-command,
-    .card-recipitient {
-        width: 25%;
-    }
-    .card-analogue,
-    .card-message {
-        width: 34%;
-    }
-    .card-preference,
-    .card-sms-amount {
-        width: 35%;
+    .card-io {
+        width: 30%;
     }
 }

@@ -1,0 +1,277 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modal</title>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- styles -->
+    <link rel="stylesheet" href="index3.css" />
+  </head>
+  <body>
+    <div class="containter">
+      <div class="header">
+        <div class="top-page-title">
+          Settings:
+          <select class="transparant-select">
+            <option>Device 1</option>
+            <option>Device 2</option>
+            <option>Device 3</option>
+          </select>
+        </div>
+        <div class="top-menu">
+          <a class="item-top-menu">Device Settings</a>
+          <a class="item-top-menu">Remote Settings</a>
+          <a class="item-top-menu">FOTA/COTA</a>
+          <a class="item-top-menu">Terminal</a>
+        </div>
+      </div>
+      <div class="main-layout">
+        <div class="menu-contain">
+          <div class="menu">
+            <div class="item-menu active">General</div>
+            <div class="item-menu">
+              <div id="general" class="item-menu-parent">
+                Channel
+                <div class="navigator">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7 10L12 15L17 10H7Z"
+                      fill="#000035"
+                      fill-opacity="0.7"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div class="item-menu-child general">
+                <div class="item-menu">Power In monitoring</div>
+                <div class="item-menu">Channels 1-7</div>
+              </div>
+            </div>
+            <div class="item-menu">Calibration</div>
+            <div class="item-menu">Communications</div>
+            <div class="item-menu">Data Logging and Timer Settings</div>
+          </div>
+        </div>
+        <div class="layout">
+          <div class="big-title">
+            <div class="page-title">Channel Calibration</div>
+          </div>
+          <div class="form-first">
+            <div class="card no-padding-left card-io">
+              <div class="card-title bold">I/O2</div>
+              <div class="card-title-desc">A/D Cal values CH2</div>
+              <div class="card-body">
+                <div class="card-body-unit">
+                  <div class="flex-x-item">
+                    <div class="flex-x-label">Unit:</div>
+                    <div class="flex-x-input-unit"><input class="input-text-form"></div>
+                  </div>
+                </div>
+                <div class="flex-x">
+                  <div class="flex-x-item">
+                    <div class="flex-x-label">X1</div>
+                    <div class="flex-x-input"><input class="input-text-form"></div>
+                  </div>
+                  <div class="flex-x-item">
+                    <div class="flex-x-label">Y1</div>
+                    <div class="flex-x-input"><input class="input-text-form"></div>
+                  </div>
+                </div>
+                <div class="flex-x">
+                  <div class="flex-x-item">
+                    <div class="flex-x-label">X2</div>
+                    <div class="flex-x-input"><input class="input-text-form"></div>
+                  </div>
+                  <div class="flex-x-item">
+                    <div class="flex-x-label">Y2</div>
+                    <div class="flex-x-input"><input class="input-text-form"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card card-io">
+              <div class="card-title bold">I/O3</div>
+              <div class="card-title-desc">A/D Cal values CH2</div>
+              <div class="card-body">
+                <div class="card-body-unit">
+                  <div class="flex-x-item">
+                    <div class="flex-x-label">Unit:</div>
+                    <div class="flex-x-input-unit"><input class="input-text-form"></div>
+                  </div>
+                </div>
+                <div class="flex-x">
+                  <div class="flex-x-item">
+                    <div class="flex-x-label">X1</div>
+                    <div class="flex-x-input"><input class="input-text-form"></div>
+                  </div>
+                  <div class="flex-x-item">
+                    <div class="flex-x-label">Y1</div>
+                    <div class="flex-x-input"><input class="input-text-form"></div>
+                  </div>
+                </div>
+                <div class="flex-x">
+                  <div class="flex-x-item">
+                    <div class="flex-x-label">X2</div>
+                    <div class="flex-x-input"><input class="input-text-form"></div>
+                  </div>
+                  <div class="flex-x-item">
+                    <div class="flex-x-label">Y2</div>
+                    <div class="flex-x-input"><input class="input-text-form"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card card-io">
+              <div class="card-title bold">I/O4</div>
+              <div class="card-title-desc">A/D Cal values CH4</div>
+              <div class="card-body">
+                <div class="card-body-unit">
+                  <div class="flex-x-item">
+                    <div class="flex-x-label">Unit:</div>
+                    <div class="flex-x-input-unit"><input class="input-text-form"></div>
+                  </div>
+                </div>
+                <div class="flex-x">
+                  <div class="flex-x-item">
+                    <div class="flex-x-label">X1</div>
+                    <div class="flex-x-input"><input class="input-text-form"></div>
+                  </div>
+                  <div class="flex-x-item">
+                    <div class="flex-x-label">Y1</div>
+                    <div class="flex-x-input"><input class="input-text-form"></div>
+                  </div>
+                </div>
+                <div class="flex-x">
+                  <div class="flex-x-item">
+                    <div class="flex-x-label">X2</div>
+                    <div class="flex-x-input"><input class="input-text-form"></div>
+                  </div>
+                  <div class="flex-x-item">
+                    <div class="flex-x-label">Y2</div>
+                    <div class="flex-x-input"><input class="input-text-form"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-second">
+            <div class="card no-padding-left card-io">
+              <div class="card-title bold">I/O5</div>
+              <div class="card-title-desc">A/D Cal values CH5</div>
+              <div class="card-body">
+                <div class="card-body-unit">
+                  <div class="flex-x-item">
+                    <div class="flex-x-label">Unit:</div>
+                    <div class="flex-x-input-unit"><input class="input-text-form"></div>
+                  </div>
+                </div>
+                <div class="flex-x">
+                  <div class="flex-x-item">
+                    <div class="flex-x-label">X1</div>
+                    <div class="flex-x-input"><input class="input-text-form"></div>
+                  </div>
+                  <div class="flex-x-item">
+                    <div class="flex-x-label">Y1</div>
+                    <div class="flex-x-input"><input class="input-text-form"></div>
+                  </div>
+                </div>
+                <div class="flex-x">
+                  <div class="flex-x-item">
+                    <div class="flex-x-label">X2</div>
+                    <div class="flex-x-input"><input class="input-text-form"></div>
+                  </div>
+                  <div class="flex-x-item">
+                    <div class="flex-x-label">Y2</div>
+                    <div class="flex-x-input"><input class="input-text-form"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card card-io">
+              <div class="card-title bold">I/O6</div>
+              <div class="card-title-desc">A/D Cal values CH6</div>
+              <div class="card-body">
+                <div class="card-body-unit">
+                  <div class="flex-x-item">
+                    <div class="flex-x-label">Unit:</div>
+                    <div class="flex-x-input-unit"><input class="input-text-form"></div>
+                  </div>
+                </div>
+                <div class="flex-x">
+                  <div class="flex-x-item">
+                    <div class="flex-x-label">X1</div>
+                    <div class="flex-x-input"><input class="input-text-form"></div>
+                  </div>
+                  <div class="flex-x-item">
+                    <div class="flex-x-label">Y1</div>
+                    <div class="flex-x-input"><input class="input-text-form"></div>
+                  </div>
+                </div>
+                <div class="flex-x">
+                  <div class="flex-x-item">
+                    <div class="flex-x-label">X2</div>
+                    <div class="flex-x-input"><input class="input-text-form"></div>
+                  </div>
+                  <div class="flex-x-item">
+                    <div class="flex-x-label">Y2</div>
+                    <div class="flex-x-input"><input class="input-text-form"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card card-io">
+              <div class="card-title bold">I/O7</div>
+              <div class="card-title-desc">A/D Cal values CH7</div>
+              <div class="card-body">
+                <div class="card-body-unit">
+                  <div class="flex-x-item">
+                    <div class="flex-x-label">Unit:</div>
+                    <div class="flex-x-input-unit"><input class="input-text-form"></div>
+                  </div>
+                </div>
+                <div class="flex-x">
+                  <div class="flex-x-item">
+                    <div class="flex-x-label">X1</div>
+                    <div class="flex-x-input"><input class="input-text-form"></div>
+                  </div>
+                  <div class="flex-x-item">
+                    <div class="flex-x-label">Y1</div>
+                    <div class="flex-x-input"><input class="input-text-form"></div>
+                  </div>
+                </div>
+                <div class="flex-x">
+                  <div class="flex-x-item">
+                    <div class="flex-x-label">X2</div>
+                    <div class="flex-x-input"><input class="input-text-form"></div>
+                  </div>
+                  <div class="flex-x-item">
+                    <div class="flex-x-label">Y2</div>
+                    <div class="flex-x-input"><input class="input-text-form"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-third">
+            <div>
+              <input class="input-text-form input-phone-number" placeholder="Phone number">
+              <button class="button1">Send all CH Values</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
