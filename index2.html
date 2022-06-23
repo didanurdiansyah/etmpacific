@@ -66,7 +66,7 @@
             </div>
             <div data-layout="menu-calibration" class="item-menu">Calibration</div>
             <div data-layout="menu-communication" class="item-menu">Communications</div>
-            <div data-layout="menu-data-log" class="item-menu">Data Logging and Timer Settings</div>
+            <div data-layout="menu-data-log" class="item-menu">Data Logging andTimer Settings</div>
           </div>
         </div>
         <div id="menu-general" class="layout">
@@ -936,6 +936,148 @@
           </div>
           <div class="form-four">
             <div class="section-title">Send interval logged data (SWT2)</div>
+            <div>
+              Active a send data (port 2150) 
+            </div>
+            <div style="display: flex; flex-warp: warp;">
+              <div class="card card-io">
+                <div class="card-title bold">IP Address</div>
+                <div class="">
+                  <div class="">
+                    <input
+                      type="radio"
+                      id="IP1"
+                      class="checkbox-input"
+                      name="ip_address"
+                      value="ip1"
+                    />
+                    <label for="ip-address">IP1</label>
+                  </div>
+                  <div class="">
+                    <input
+                      type="radio"
+                      id="IP2"
+                      class="checkbox-input"
+                      name="ip_address"
+                      value="ip2"
+                    />
+                    <label for="ip-address">IP2</label>
+                  </div>
+                </div>
+                <div>
+                  <textarea></textarea>
+                </div>
+              </div>
+              <div class="card card-io">
+                <div class="card-title bold">Periodicity</div>
+                <div>
+                  <div>Data log interval: </div>
+                  <div class="">
+                    <input
+                      type="radio"
+                      id="IP2"
+                      class="checkbox-input"
+                      name="ip_address"
+                      value="ip2"
+                    />
+                    <label for="ip-address">Periodic</label>
+                  </div>
+                  <div class="">
+                    <input
+                      type="radio"
+                      id="IP2"
+                      class="checkbox-input"
+                      name="ip_address"
+                      value="ip2"
+                    />
+                    <label for="ip-address">Synchronized</label>
+                  </div>
+                </div>
+              </div>
+              <div class="card card-io">
+                <div class="card-title bold">Data packets to send (port 2150)</div>
+                <div>
+                  <div>[#21] Format</div>
+                  <div class="">
+                    <input
+                      type="checkbox"
+                      id="units"
+                      class="checkbox-input"
+                      name="data_packets"
+                      value="units"
+                    />
+                    <label for="units">Append Units</label>
+                  </div>
+                  <div class="">
+                    <input
+                      type="checkbox"
+                      id="control-char"
+                      class="checkbox-input"
+                      name="data_packets"
+                      value="control_char"
+                    />
+                    <label for="control-char">Append Control Char</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-four">
+            <div class="section-title">Send interval logged data (SWT5)</div>
+            <div style="display: flex; flex-wrap: warp;">
+              <div class="card card-io">
+                <div>Use Low Power Mode</div>
+                <div>Minimun Awake Time</div>
+              </div>
+              <div class="card card-io">
+                <div>Periodicity</div>
+                <div>Data log interval</div>
+                <div>
+                  <div class="">
+                    <input
+                      type="radio"
+                      id="IP2"
+                      class="checkbox-input"
+                      name="ip_address"
+                      value="ip2"
+                    />
+                    <label for="ip-address">Periodic</label>
+                  </div>
+                  <div class="">
+                    <input
+                      type="radio"
+                      id="IP2"
+                      class="checkbox-input"
+                      name="ip_address"
+                      value="ip2"
+                    />
+                    <label for="ip-address">Synchronized</label>
+                  </div>
+                </div>
+              </div>
+              <div class="card card-io">
+                <div>Analogue Alarm Check Period</div>
+                <div>
+                  <div class="">
+                    <input
+                      type="radio"
+                      id="IP2"
+                      class="checkbox-input"
+                      name="ip_address"
+                      value="ip2"
+                    />
+                    <label for="ip-address">Wake up if Send Req</label>
+                  </div>
+                  <div class="">
+                    <input
+                      type="radio"
+                      id="IP2"
+                      class="checkbox-input"                    />
+                    <label for="ip-address">Sleep whe Send Req.is Done</label>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

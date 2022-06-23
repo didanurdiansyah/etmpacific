@@ -349,7 +349,8 @@ body {
 
 /* -------> page data-log start <---------- */
 .input-form {
-
+    display: flex;
+    flex-wrap: wrap;
 }
 /* -------> page data-log end <---------- */
 
