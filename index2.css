@@ -31,7 +31,8 @@ body {
 .page-title {
     font-size: 20px;
     font-weight: 700;
-    margin: 10px 0px;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 .section-title {
@@ -260,6 +261,15 @@ body {
     padding-left: 0px !important;
 }
 
+.checkbox {
+    padding: 5px;
+}
+
+.checkbox-input {
+    top: 2px;
+    position: relative;
+}
+
 .checkbox-input:checked {
     border-color: #444;
     background-color:#444;
@@ -316,7 +326,7 @@ body {
 
 .flex-x-label {
     padding: 15px;
-    width: 40px;
+    width: 60px;
 }
 
 .btn-link {
@@ -336,6 +346,12 @@ body {
 }
 
 /* -------> page channel end <---------- */
+
+/* -------> page data-log start <---------- */
+.input-form {
+
+}
+/* -------> page data-log end <---------- */
 
 /* -------> reponsive <---------- */
 @media (min-width: 300px) {
@@ -387,6 +403,9 @@ body {
     .card-sms-amount {
         width: 45%;
     }
+    .card-io {
+        width: 90%;
+    }
 }
 
 @media (min-width: 800px) {
@@ -408,6 +427,9 @@ body {
     .card-analogue,
     .card-preference,
     .card-sms-amount {
+        width: 45%;
+    }
+    .card-io {
         width: 45%;
     }
 }
@@ -433,6 +455,9 @@ body {
     .card-sms-amount {
         width: 45%;
     }
+    .card-io {
+        width: 45%;
+    }
 }
 
 @media (min-width: 1000px) {
@@ -451,6 +476,9 @@ body {
     .card-analogue,
     .card-preference,
     .card-sms-amount {
+        width: 45%;
+    }
+    .card-io {
         width: 45%;
     }
 }
@@ -527,5 +555,9 @@ body {
 
     .card-io {
         width: 30%;
+    }
+
+    .card-input {
+        width: 20%;
     }
 }
