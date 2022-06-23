@@ -49,6 +49,7 @@ body {
     color: #000;
 }
 
+.item-top-menu.active,
 .item-top-menu:hover {
     font-size: 15px;
     padding: 25px;
@@ -58,7 +59,10 @@ body {
 }
 
 .top-menu-mobile {
+    display: none;
     float: right;
+    padding: 18px 20px;
+    cursor: pointer;
 }
 
 .header {
@@ -272,8 +276,13 @@ body {
     color: #082f82;
 }
 
+
 @media (min-width: 300px) {
-    .menu {
+    .top-menu-mobile {
+        display: flex;
+    }
+    .top-menu,
+    .menu-contain {
         display: none;
     }
     .layout {
@@ -282,12 +291,20 @@ body {
     .no-padding-left {
         padding: 10px !important;
     }
-
+    .card-io {
+        width: 90%;
+    }
 }
 
 
 @media (min-width: 700px) {
-    .menu {
+    .top-menu-mobile {
+        display: flex;
+    }
+    .top-menu {
+        display: none;
+    }
+    .menu-contain {
         display: none;
     }
     .no-padding-left {
@@ -296,35 +313,91 @@ body {
     .layout {
         width: 100%;
     }
-
+    .card-io {
+        width: 90%;
+    }
 }
 
-@media (min-width: 1000px) {
-    .menu {
+@media (min-width: 800px) {
+    .top-menu-mobile {
+        display: flex;
+    }
+    .top-menu {
+        display: none;
+    }
+    .menu-contain {
         display: none;
     }
     .layout {
         width: 100%;
     }
+    .card-io {
+        width: 45%;
+    }
+}
 
+@media (min-width: 900px) {
+    .top-menu-mobile {
+        display: none;
+    }
+    .top-menu {
+        display: flex;
+    }
+    .menu-contain {
+        display: none;
+    }
+    .layout {
+        width: 100%;
+    }
+    .card-io {
+        width: 45%;
+    }
+}
+
+@media (min-width: 1000px) {
+    .top-menu {
+        display: flex;
+    }
+    .menu-contain {
+        display: none;
+    }
+    .layout {
+        width: 100%;
+    }
+    .card-io {
+        width: 45%;
+    }
 }
 
 @media (min-width: 1100px) {
-    .menu {
+    .top-menu {
+        display: flex;
+    }
+    .menu-contain {
         display: block;
     }
-    
+    .card-io {
+        width: 30%;
+    }
 }
 
 @media (min-width: 1200px) {
-    .menu {
+    .top-menu {
+        display: flex;
+    }
+    .menu-contain {
         display: block;
     }
-
+    .card-io {
+        width: 30%;
+    }
 }
 
 @media (min-width: 1300px) {
-    .menu {
+    .top-menu {
+        display: flex;
+    }
+    .menu-contain {
         display: block;
     }
     .card-io {

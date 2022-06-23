@@ -1,3 +1,5 @@
+/* ------ Global CSS ------ */
+
 body {
     font-family: 'Montserrat', sans-serif;
     font-size: 13px;
@@ -7,7 +9,6 @@ body {
     overflow: auto;
 }
 
-
 .card-command,
 .card-recipitient {
     width: 25%;
@@ -16,6 +17,10 @@ body {
 .card-analogue,
 .card-message {
     width: 35%;
+}
+
+.d-none {
+    display: none !important;
 }
 
 .card-preference,
@@ -98,8 +103,10 @@ body {
     position: relative;
     top:2px;
     color: #000;
+    cursor: pointer;
 }
 
+.item-top-menu.active,
 .item-top-menu:hover {
     font-size: 15px;
     padding: 25px;
@@ -157,7 +164,13 @@ body {
 
 .item-menu-parent {
     display: flex;
+    cursor: pointer;
 }
+
+.item-menu-parent.active {
+    color: #164BBD;
+}
+
 
 .item-menu-child {
     display: block;
@@ -184,6 +197,10 @@ body {
 }
 
 .card-title {
+    margin-bottom: 10px;
+}
+
+.card-title-desc {
     margin-bottom: 10px;
 }
 
@@ -248,7 +265,79 @@ body {
     background-color:#444;
 }
 
+.button1 {
+    background-color: #164BBD;
+    color: #fff;
+    border: 0px;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
 
+.button:hover {
+    background-color: #164bbdb9;
+    color: #fff;
+}
+
+/* ------ End Global CSS ------ */
+
+/* -------> page general start <---------- */
+
+
+
+/* -------> page general end <---------- */
+
+
+/* -------> page channel start<---------- */
+
+.card-body-unit {
+    display: flex;
+    width: 100%;
+}
+
+.flex-x-input {
+    width: calc(100% - 40px);
+}
+
+.flex-x-input-unit {
+    width: calc(100% - 40px);
+}
+
+.flex-x {
+    padding-top: 10px;
+    display: flex;
+    width: 100%;
+}
+
+.flex-x-item {
+    display: flex;
+    width: 100%;
+}
+
+.flex-x-label {
+    padding: 15px;
+    width: 40px;
+}
+
+.btn-link {
+    float: right;
+    margin-top: 10px;
+    cursor: pointer;
+    color: #164BBD;
+}
+
+.btn-link:hover {
+    color: #082f82;
+}
+
+.input-phone-number {
+    width: 180px;
+    margin-right: 10px;
+}
+
+/* -------> page channel end <---------- */
+
+/* -------> reponsive <---------- */
 @media (min-width: 300px) {
     .top-menu-mobile {
         display: flex;
@@ -385,6 +474,10 @@ body {
     .card-sms-amount {
         width: 35%;
     }
+
+    .card-io {
+        width: 30%;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -406,6 +499,10 @@ body {
     .card-sms-amount {
         width: 35%;
     }
+
+    .card-io {
+        width: 30%;
+    }
 }
 
 @media (min-width: 1300px) {
@@ -426,5 +523,9 @@ body {
     .card-preference,
     .card-sms-amount {
         width: 35%;
+    }
+
+    .card-io {
+        width: 30%;
     }
 }
