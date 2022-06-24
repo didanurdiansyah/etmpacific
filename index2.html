@@ -5,11 +5,8 @@
     <title>Modal</title>
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500;700&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&display=swap" rel="stylesheet">
     <!-- styles -->
     <link rel="stylesheet" href="index2.css" />
     <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
@@ -76,7 +73,7 @@
           </div>
           <div class="form-first">
             <div class="card no-padding-left card-recipitient">
-              <div class="card-title">Recipitients</div>
+              <div class="card-title-desc">Recipitients</div>
               <div>
                 <div class="flex">
                   <div class="p-2">1</div>
@@ -141,7 +138,7 @@
               </div>
             </div>
             <div class="card card-message">
-              <div class="card-title">Messege</div>
+              <div class="card-title-desc">Messege</div>
               <div class="w-auto">
                 <textarea
                   rows="6"
@@ -153,7 +150,7 @@
               <div class="info-char">0/150</div>
             </div>
             <div class="card card-sms-amount">
-              <div class="card-title">SMS Amount</div>
+              <div class="card-title-desc">SMS Amount</div>
               <div class="card-body">
                 <div class="flex">
                   <span class="mr-3">Maximum of</span>
@@ -939,40 +936,43 @@
             <div>
               Active a send data (port 2150) 
             </div>
-            <div style="display: flex; flex-warp: warp;">
-              <div class="card card-io">
+            <div class="active-data-port">
+              <div class="card card-io no-padding-left">
                 <div class="card-title bold">IP Address</div>
-                <div class="">
-                  <div class="">
+                <div class="input-form">
+                  <div class="m-r-5">
                     <input
                       type="radio"
                       id="IP1"
-                      class="checkbox-input"
+                      class="checkbox-input left-checkbox"
                       name="ip_address"
                       value="ip1"
                     />
                     <label for="ip-address">IP1</label>
                   </div>
-                  <div class="">
+                  <div class="m-r-5">
                     <input
                       type="radio"
                       id="IP2"
-                      class="checkbox-input"
+                      class="checkbox-input left-checkbo"
                       name="ip_address"
                       value="ip2"
                     />
                     <label for="ip-address">IP2</label>
                   </div>
                 </div>
-                <div>
-                  <textarea></textarea>
+                <div class="p-t-2">
+                  <textarea class="input-text-area textarea-form"></textarea>
                 </div>
               </div>
               <div class="card card-io">
                 <div class="card-title bold">Periodicity</div>
                 <div>
-                  <div>Data log interval: </div>
-                  <div class="">
+                  <div>
+                    Data log interval: 
+                    <input class="input-text-form" value="10" style="width: 55px;"/>
+                  </div>
+                  <div class="checkbox">
                     <input
                       type="radio"
                       id="IP2"
@@ -982,7 +982,7 @@
                     />
                     <label for="ip-address">Periodic</label>
                   </div>
-                  <div class="">
+                  <div class="checkbox">
                     <input
                       type="radio"
                       id="IP2"
@@ -998,7 +998,7 @@
                 <div class="card-title bold">Data packets to send (port 2150)</div>
                 <div>
                   <div>[#21] Format</div>
-                  <div class="">
+                  <div class="checkbox">
                     <input
                       type="checkbox"
                       id="units"
@@ -1008,7 +1008,7 @@
                     />
                     <label for="units">Append Units</label>
                   </div>
-                  <div class="">
+                  <div class="checkbox">
                     <input
                       type="checkbox"
                       id="control-char"
@@ -1033,7 +1033,7 @@
                 <div>Periodicity</div>
                 <div>Data log interval</div>
                 <div>
-                  <div class="">
+                  <div class="checkbox">
                     <input
                       type="radio"
                       id="IP2"
@@ -1043,7 +1043,7 @@
                     />
                     <label for="ip-address">Periodic</label>
                   </div>
-                  <div class="">
+                  <div class="checkbox">
                     <input
                       type="radio"
                       id="IP2"
@@ -1058,7 +1058,7 @@
               <div class="card card-io">
                 <div>Analogue Alarm Check Period</div>
                 <div>
-                  <div class="">
+                  <div class="checkbox">
                     <input
                       type="radio"
                       id="IP2"
@@ -1068,7 +1068,7 @@
                     />
                     <label for="ip-address">Wake up if Send Req</label>
                   </div>
-                  <div class="">
+                  <div class="checkbox">
                     <input
                       type="radio"
                       id="IP2"
