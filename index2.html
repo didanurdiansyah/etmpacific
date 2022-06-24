@@ -22,21 +22,59 @@
             <option>Device 3</option>
           </select>
         </div>
-        <div class="top-menu">
-          <a class="item-top-menu">Device Settings</a>
-          <a class="item-top-menu active">Remote Settings</a>
-          <a class="item-top-menu">FOTA/COTA</a>
-          <a class="item-top-menu">Terminal</a>
-        </div>
         <div class="top-menu-mobile">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-          <path d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"/></svg>
+          <div class="menu-mobile">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+            <path d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"/></svg>
+          </div>
+          <div class="top-menu-dropdown-mobile d-none">
+            <a data-flag="t-m-device-setting" class="item-top-menu-mobile">Device Settings</a>
+            <a data-flag="t-m-remote-setting" class="item-top-menu-mobile active">Remote Settings</a>
+            <a data-flag="t-m-fota-cota-setting" class="item-top-menu-mobile">FOTA/COTA</a>
+            <a data-flag="t-m-terminal-setting" class="item-top-menu-mobile">Terminal</a>
+          </div>
+        </div>
+        <div class="top-menu">
+          <a data-flag="t-m-device-setting" class="item-top-menu">Device Settings</a>
+          <a data-flag="t-m-remote-setting" class="item-top-menu active">Remote Settings</a>
+          <a data-flag="t-m-fota-cota-setting" class="item-top-menu">FOTA/COTA</a>
+          <a data-flag="t-m-terminal-setting" class="item-top-menu">Terminal</a>
         </div>
       </div>
       <div id="remote-settings" class="main-layout">
+        <div class="menu-contain-mobile">
+            <div data-layout="menu-general" class="item-menu-m active no-padding-left">General</div>
+            <div data-layout="menu-channel" class="item-menu-m">
+              <div data-layout="menu-channel" class="item-menu-parent">
+                Channel
+                <div class="navigator">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7 10L12 15L17 10H7Z"
+                      fill="#000035"
+                      fill-opacity="0.7"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div class="item-menu-child general d-none">
+                <div class="item-menu">Power In monitoring</div>
+                <div class="item-menu">Channels 1-7</div>
+              </div>
+            </div>
+            <div data-layout="menu-calibration" class="item-menu-m">Calibration</div>
+            <div data-layout="menu-communication" class="item-menu-m">Communications</div>
+            <div data-layout="menu-data-log" class="item-menu-m">Data Logging and Timer Settings</div>
+        </div>
         <div class="menu-contain">
           <div class="menu">
-            <div data-layout="menu-general" class="item-menu ">General</div>
+            <div data-layout="menu-general" class="item-menu active">General</div>
             <div data-layout="menu-channel" class="item-menu">
               <div data-layout="menu-channel" class="item-menu-parent">
                 Channel
@@ -63,10 +101,10 @@
             </div>
             <div data-layout="menu-calibration" class="item-menu">Calibration</div>
             <div data-layout="menu-communication" class="item-menu">Communications</div>
-            <div data-layout="menu-data-log" class="item-menu active">Data Logging andTimer Settings</div>
+            <div data-layout="menu-data-log" class="item-menu">Data Logging and Timer Settings</div>
           </div>
         </div>
-        <div id="menu-general" class="layout d-none">
+        <div id="menu-general" class="layout">
           <div class="big-title">
             <div class="page-title">General (?)</div>
             <div class="section-title">SMS Alarming</div>
@@ -510,7 +548,7 @@
             <div class="section-title">Connected to ISP or Server</div>
           </div>
         </div>
-        <div id="menu-data-log" class="layout">
+        <div id="menu-data-log" class="layout d-none">
           <div class="big-title">
             <div class="page-title">Data Logging (SWT1)</div>
           </div>
@@ -1049,7 +1087,7 @@
           </div>
           <div class="form-four">
             <div class="section-title">Send interval logged data (SWT5)</div>
-            <div style="display: flex; flex-wrap: warp;">
+            <div class="active-data-port">
               <div class="card card-io">
                 <div style="margin-bottom: 10px;">Use Low Power Mode</div>
                 <div style="margin-top: 20px;">

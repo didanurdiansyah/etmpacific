@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready((event) => {
     $(".item-menu").click((e) => {
         const dataLayout = e.target.dataset.layout;
         $(".layout").addClass('d-none');
@@ -6,9 +6,43 @@ $(document).ready(function() {
         $('*[data-layout="'+dataLayout+'"]').addClass('active')
         $("#"+dataLayout).removeClass('d-none')
     })
-    $(".item-top-menu").click((e) => {
+    $(".item-menu-m").click((e) => {
         const dataLayout = e.target.dataset.layout;
-        $(".item-top-menu").removeClass('active');
-        $(e.target).addClass('active');
+        $(".layout").addClass('d-none');
+        $(".item-menu-m").removeClass('active');
+        $(".item-menu").removeClass('active');
+        $('*[data-layout="'+dataLayout+'"]').addClass('active')
+        $("#"+dataLayout).removeClass('d-none')
     })
+    $(".item-top-menu").click((e) => {
+        const dataLayout = e.target.dataset.flag;
+        $('.item-top-menu-mobile').removeClass('active')
+        $(".item-top-menu").removeClass('active');
+        $('*[data-flag="'+dataLayout+'"]').addClass('active')
+    })
+    $(".menu-mobile").click((e) => {
+        if($('.top-menu-dropdown-mobile').hasClass('d-none')) {
+            $('.top-menu-dropdown-mobile').removeClass('d-none')
+            $('.top-menu-dropdown-mobile').addClass('d-show')
+        } else {
+            $('.top-menu-dropdown-mobile').removeClass('d-show')
+            $('.top-menu-dropdown-mobile').addClass('d-none')
+        }
+    })
+    $(".item-top-menu-mobile").click((e) => {
+        const dataLayout = e.target.dataset.flag;
+        $('.item-top-menu-mobile').removeClass('active')
+        $(".item-top-menu").removeClass('active');
+        $('*[data-flag="'+dataLayout+'"]').addClass('active')
+    })
+    $(document).click(function(e){
+        if ($(e.target).closest(".menu-mobile").length == 0) {
+            // .closest can help you determine if the element 
+            // or one of its ancestors is #menuscontainer
+            if($('.top-menu-dropdown-mobile').hasClass('d-show')) {
+                $('.top-menu-dropdown-mobile').removeClass('d-show')
+                $('.top-menu-dropdown-mobile').addClass('d-none')
+            }
+        }
+    });
 });
