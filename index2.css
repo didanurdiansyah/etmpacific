@@ -62,9 +62,10 @@ body {
     padding-top: 15px;
 }
 
-.left-checkbox {
-    left: -5px;
+.p-b-3 {
+    padding-top: 20px;
 }
+
 
 .ml-3 {
     margin-top: 12px;
@@ -228,6 +229,10 @@ body {
     font-size: 16px;
 }
 
+.card-title-desc .checkbox-input {
+    top: 1px
+}
+
 .bold {
     font-weight: bold;
 }
@@ -299,6 +304,10 @@ body {
     background-color:#444;
 }
 
+.left-checkbox {
+    left: -5px;
+}
+
 .button1 {
     background-color: #164BBD;
     color: #fff;
@@ -313,6 +322,13 @@ body {
     color: #fff;
 }
 
+.left-checkbox-1 {
+    margin-left: 4px;
+}
+
+.w-100 {
+    width: 100%;
+}
 /* ------ End Global CSS ------ */
 
 /* -------> page general start <---------- */
@@ -590,6 +606,7 @@ body {
     }
 
     .card-input {
-        width: 20%;
+        width: 23%;
+        margin-bottom: 20px;
     }
 }

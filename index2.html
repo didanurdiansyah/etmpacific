@@ -36,7 +36,7 @@
       <div id="remote-settings" class="main-layout">
         <div class="menu-contain">
           <div class="menu">
-            <div data-layout="menu-general" class="item-menu active">General</div>
+            <div data-layout="menu-general" class="item-menu ">General</div>
             <div data-layout="menu-channel" class="item-menu">
               <div data-layout="menu-channel" class="item-menu-parent">
                 Channel
@@ -63,10 +63,10 @@
             </div>
             <div data-layout="menu-calibration" class="item-menu">Calibration</div>
             <div data-layout="menu-communication" class="item-menu">Communications</div>
-            <div data-layout="menu-data-log" class="item-menu">Data Logging andTimer Settings</div>
+            <div data-layout="menu-data-log" class="item-menu active">Data Logging andTimer Settings</div>
           </div>
         </div>
-        <div id="menu-general" class="layout">
+        <div id="menu-general" class="layout d-none">
           <div class="big-title">
             <div class="page-title">General (?)</div>
             <div class="section-title">SMS Alarming</div>
@@ -510,7 +510,7 @@
             <div class="section-title">Connected to ISP or Server</div>
           </div>
         </div>
-        <div id="menu-data-log" class="layout d-none">
+        <div id="menu-data-log" class="layout">
           <div class="big-title">
             <div class="page-title">Data Logging (SWT1)</div>
           </div>
@@ -588,15 +588,40 @@
             <div class="card card-io">
               <div class="card-title">Title</div>
               <div class="card-body">
-
+                <div class="checkbox">
+                  <input
+                    type="checkbox"
+                    id="status-on-timed"
+                    class="checkbox-input"
+                    name="status"
+                    value="on-timed"
+                  />
+                  <label for="html">Use Pulse Count Value On Event </label>
+                </div>
+                <div class="checkbox">
+                  <input
+                    type="checkbox"
+                    id="status-on-timed"
+                    class="checkbox-input"
+                    name="status"
+                    value="on-timed"
+                  />
+                  <label for="html">Toggle SensFeed(ch30)
+                    <input class="input-text-form" style="width: 50px; margin: 0px 10px">
+                    sec. before logging
+                  </label>
+                </div>
               </div>
             </div>
           </div>
-          <div class="section-title">Periodicity</div>
           <div class="form-second">
-            <div class="card card-io">
-              <div class="card-title">Data log interval:</div>
+            <div class="section-title w-100">Periodicity</div>
+            <div class="card card-io no-padding-left">
               <div class="card-body">
+                <div>
+                  Data log interval:
+                  <input class="input-text-form" value="10" style="width: 60px; margin-left: 10px;" />
+                </div>
                 <div class="checkbox">
                   <input
                     type="radio"
@@ -620,41 +645,41 @@
               </div>
             </div>
           </div>
-          <div class="section-title">Inputs</div>
           <div class="form-third input-form">
+            <div class="section-title w-100">Inputs</div>
             <div class="card card-input">
+              <div class="card-title-desc">
+                <input
+                  type="checkbox"
+                  id="status-on-01"
+                  class="checkbox-input"
+                  name="status"
+                  value="on-timed-01"
+                />
+                <label for="html">Input CH1 (I/O1)</label>
+              </div>
               <div class="card-body">
-                <div class="checkbox">
-                  <input
-                    type="checkbox"
-                    id="status-on-01"
-                    class="checkbox-input"
-                    name="status"
-                    value="on-timed-01"
-                  />
-                  <label for="html">Input CH1 (I/O1)</label>
-                </div>
-                <div class="checkbox">
+                <div class="checkbox no-padding-left">
                   <input
                     type="radio"
                     id="status-on-01"
-                    class="checkbox-input"
+                    class="checkbox-input left-checkbox-1"
                     name="status"
                     value="on-timed-01"
                   />
                   <label for="html">Pulse</label>
                 </div>
-                <div class="checkbox">
+                <div class="checkbox no-padding-left">
                   <input
                     type="radio"
                     id="status-on-01"
-                    class="checkbox-input"
+                    class="checkbox-input left-checkbox-1"
                     name="status"
                     value="on-timed-01"
                   />
                   <label for="html">Digital</label>
                 </div>
-                <div class="checkbox">
+                <div class="checkbox no-padding-left">
                   <input
                     type="checkbox"
                     id="status-on-01"
@@ -667,38 +692,38 @@
               </div>
             </div>
             <div class="card card-input">
+              <div class="card-title-desc">
+                <input
+                  type="checkbox"
+                  id="status-on-01"
+                  class="checkbox-input"
+                  name="status"
+                  value="on-timed-01"
+                />
+                <label for="html">Input CH2 (I/O2)</label>
+              </div>
               <div class="card-body">
-                <div class="checkbox">
-                  <input
-                    type="checkbox"
-                    id="status-on-01"
-                    class="checkbox-input"
-                    name="status"
-                    value="on-timed-01"
-                  />
-                  <label for="html">Input CH1 (I/O1)</label>
-                </div>
-                <div class="checkbox">
+                <div class="checkbox no-padding-left">
                   <input
                     type="radio"
                     id="status-on-01"
-                    class="checkbox-input"
+                    class="checkbox-input left-checkbox-1"
                     name="status"
                     value="on-timed-01"
                   />
                   <label for="html">Pulse</label>
                 </div>
-                <div class="checkbox">
+                <div class="checkbox no-padding-left">
                   <input
                     type="radio"
                     id="status-on-01"
-                    class="checkbox-input"
+                    class="checkbox-input left-checkbox-1"
                     name="status"
                     value="on-timed-01"
                   />
                   <label for="html">Digital</label>
                 </div>
-                <div class="checkbox">
+                <div class="checkbox no-padding-left">
                   <input
                     type="checkbox"
                     id="status-on-01"
@@ -711,38 +736,38 @@
               </div>
             </div>
             <div class="card card-input">
+              <div class="card-title-desc">
+                <input
+                  type="checkbox"
+                  id="status-on-01"
+                  class="checkbox-input"
+                  name="status"
+                  value="on-timed-01"
+                />
+                <label for="html">Input CH3 (I/O3)</label>
+              </div>
               <div class="card-body">
-                <div class="checkbox">
-                  <input
-                    type="checkbox"
-                    id="status-on-01"
-                    class="checkbox-input"
-                    name="status"
-                    value="on-timed-01"
-                  />
-                  <label for="html">Input CH1 (I/O1)</label>
-                </div>
-                <div class="checkbox">
+                <div class="checkbox no-padding-left">
                   <input
                     type="radio"
                     id="status-on-01"
-                    class="checkbox-input"
+                    class="checkbox-input left-checkbox-1"
                     name="status"
                     value="on-timed-01"
                   />
                   <label for="html">Pulse</label>
                 </div>
-                <div class="checkbox">
+                <div class="checkbox no-padding-left">
                   <input
                     type="radio"
                     id="status-on-01"
-                    class="checkbox-input"
+                    class="checkbox-input left-checkbox-1"
                     name="status"
                     value="on-timed-01"
                   />
                   <label for="html">Digital</label>
                 </div>
-                <div class="checkbox">
+                <div class="checkbox no-padding-left">
                   <input
                     type="checkbox"
                     id="status-on-01"
@@ -755,38 +780,38 @@
               </div>
             </div>
             <div class="card card-input">
+              <div class="card-title-desc">
+                <input
+                  type="checkbox"
+                  id="status-on-01"
+                  class="checkbox-input"
+                  name="status"
+                  value="on-timed-01"
+                />
+                <label for="html">Input CH4 (I/O4)</label>
+              </div>
               <div class="card-body">
-                <div class="checkbox">
-                  <input
-                    type="checkbox"
-                    id="status-on-01"
-                    class="checkbox-input"
-                    name="status"
-                    value="on-timed-01"
-                  />
-                  <label for="html">Input CH1 (I/O1)</label>
-                </div>
-                <div class="checkbox">
+                <div class="checkbox no-padding-left">
                   <input
                     type="radio"
                     id="status-on-01"
-                    class="checkbox-input"
+                    class="checkbox-input left-checkbox-1"
                     name="status"
                     value="on-timed-01"
                   />
                   <label for="html">Pulse</label>
                 </div>
-                <div class="checkbox">
+                <div class="checkbox no-padding-left">
                   <input
                     type="radio"
                     id="status-on-01"
-                    class="checkbox-input"
+                    class="checkbox-input left-checkbox-1"
                     name="status"
                     value="on-timed-01"
                   />
                   <label for="html">Digital</label>
                 </div>
-                <div class="checkbox">
+                <div class="checkbox no-padding-left">
                   <input
                     type="checkbox"
                     id="status-on-01"
@@ -799,38 +824,38 @@
               </div>
             </div>
             <div class="card card-input">
+              <div class="card-title-desc">
+                <input
+                  type="checkbox"
+                  id="status-on-01"
+                  class="checkbox-input"
+                  name="status"
+                  value="on-timed-01"
+                />
+                <label for="html">Input CH5 (I/O5)</label>
+              </div>
               <div class="card-body">
-                <div class="checkbox">
-                  <input
-                    type="checkbox"
-                    id="status-on-01"
-                    class="checkbox-input"
-                    name="status"
-                    value="on-timed-01"
-                  />
-                  <label for="html">Input CH1 (I/O1)</label>
-                </div>
-                <div class="checkbox">
+                <div class="checkbox no-padding-left">
                   <input
                     type="radio"
                     id="status-on-01"
-                    class="checkbox-input"
+                    class="checkbox-input left-checkbox-1"
                     name="status"
                     value="on-timed-01"
                   />
                   <label for="html">Pulse</label>
                 </div>
-                <div class="checkbox">
+                <div class="checkbox no-padding-left">
                   <input
                     type="radio"
                     id="status-on-01"
-                    class="checkbox-input"
+                    class="checkbox-input left-checkbox-1"
                     name="status"
                     value="on-timed-01"
                   />
                   <label for="html">Digital</label>
                 </div>
-                <div class="checkbox">
+                <div class="checkbox no-padding-left">
                   <input
                     type="checkbox"
                     id="status-on-01"
@@ -843,38 +868,38 @@
               </div>
             </div>
             <div class="card card-input">
+              <div class="card-title-desc">
+                <input
+                  type="checkbox"
+                  id="status-on-01"
+                  class="checkbox-input"
+                  name="status"
+                  value="on-timed-01"
+                />
+                <label for="html">Input CH6 (I/O6)</label>
+              </div>
               <div class="card-body">
-                <div class="checkbox">
-                  <input
-                    type="checkbox"
-                    id="status-on-01"
-                    class="checkbox-input"
-                    name="status"
-                    value="on-timed-01"
-                  />
-                  <label for="html">Input CH1 (I/O1)</label>
-                </div>
-                <div class="checkbox">
+                <div class="checkbox no-padding-left">
                   <input
                     type="radio"
                     id="status-on-01"
-                    class="checkbox-input"
+                    class="checkbox-input left-checkbox-1"
                     name="status"
                     value="on-timed-01"
                   />
                   <label for="html">Pulse</label>
                 </div>
-                <div class="checkbox">
+                <div class="checkbox no-padding-left">
                   <input
                     type="radio"
                     id="status-on-01"
-                    class="checkbox-input"
+                    class="checkbox-input left-checkbox-1"
                     name="status"
                     value="on-timed-01"
                   />
                   <label for="html">Digital</label>
                 </div>
-                <div class="checkbox">
+                <div class="checkbox no-padding-left">
                   <input
                     type="checkbox"
                     id="status-on-01"
@@ -887,38 +912,38 @@
               </div>
             </div>
             <div class="card card-input">
+              <div class="card-title-desc">
+                <input
+                  type="checkbox"
+                  id="status-on-01"
+                  class="checkbox-input"
+                  name="status"
+                  value="on-timed-01"
+                />
+                <label for="html">Input CH7 (I/O7)</label>
+              </div>
               <div class="card-body">
-                <div class="checkbox">
-                  <input
-                    type="checkbox"
-                    id="status-on-01"
-                    class="checkbox-input"
-                    name="status"
-                    value="on-timed-01"
-                  />
-                  <label for="html">Input CH1 (I/O1)</label>
-                </div>
-                <div class="checkbox">
+                <div class="checkbox no-padding-left">
                   <input
                     type="radio"
                     id="status-on-01"
-                    class="checkbox-input"
+                    class="checkbox-input left-checkbox-1"
                     name="status"
                     value="on-timed-01"
                   />
                   <label for="html">Pulse</label>
                 </div>
-                <div class="checkbox">
+                <div class="checkbox no-padding-left">
                   <input
                     type="radio"
                     id="status-on-01"
-                    class="checkbox-input"
+                    class="checkbox-input left-checkbox-1"
                     name="status"
                     value="on-timed-01"
                   />
                   <label for="html">Digital</label>
                 </div>
-                <div class="checkbox">
+                <div class="checkbox no-padding-left">
                   <input
                     type="checkbox"
                     id="status-on-01"
@@ -997,7 +1022,7 @@
               <div class="card card-io">
                 <div class="card-title bold">Data packets to send (port 2150)</div>
                 <div>
-                  <div>[#21] Format</div>
+                  <div style="margin: 15px 0px">[#21] Format</div>
                   <div class="checkbox">
                     <input
                       type="checkbox"
@@ -1026,12 +1051,19 @@
             <div class="section-title">Send interval logged data (SWT5)</div>
             <div style="display: flex; flex-wrap: warp;">
               <div class="card card-io">
-                <div>Use Low Power Mode</div>
-                <div>Minimun Awake Time</div>
+                <div style="margin-bottom: 10px;">Use Low Power Mode</div>
+                <div style="margin-top: 20px;">
+                  Minimun Awake Time
+                  <input class="input-text-form" style="width: 60px; margin: 0px 10px;"/>
+                  min
+                </div>
               </div>
               <div class="card card-io">
-                <div>Periodicity</div>
-                <div>Data log interval</div>
+                <div class="card-title bold">Periodicity</div>
+                <div>
+                  Data log interval
+                  <input class="input-text-form" style="width: 60px; margin: 0px 10px;"/>
+                </div>
                 <div>
                   <div class="checkbox">
                     <input
@@ -1056,8 +1088,8 @@
                 </div>
               </div>
               <div class="card card-io">
-                <div>Analogue Alarm Check Period</div>
-                <div>
+                <div style="margin-top: 40px;">Analogue Alarm Check Period</div>
+                <div style="margin-top: 10px;">
                   <div class="checkbox">
                     <input
                       type="radio"
