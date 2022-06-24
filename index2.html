@@ -44,8 +44,8 @@
       <div id="remote-settings" class="main-layout">
         <div class="menu-contain-mobile">
             <div data-layout="menu-general" class="item-menu-m active no-padding-left">General</div>
-            <div data-layout="menu-channel" class="item-menu-m">
-              <div data-layout="menu-channel" class="item-menu-parent">
+            <div class="item-menu-m">
+              <div data-layout="menu-channel-parent" id="menu-channel-m" class="item-menu-parent">
                 Channel
                 <div class="navigator">
                   <svg
@@ -63,7 +63,7 @@
                   </svg>
                 </div>
               </div>
-              <div class="item-menu-child general d-none">
+              <div id="child-menu-channel-m" class="item-menu-child general d-none">
                 <div class="item-menu">Power In monitoring</div>
                 <div class="item-menu">Channels 1-7</div>
               </div>
@@ -75,8 +75,8 @@
         <div class="menu-contain">
           <div class="menu">
             <div data-layout="menu-general" class="item-menu active">General</div>
-            <div data-layout="menu-channel" class="item-menu">
-              <div data-layout="menu-channel" class="item-menu-parent">
+            <div class="item-menu">
+              <div data-layout="menu-channel-parent" id="menu-channel" class="item-menu-parent">
                 Channel
                 <div class="navigator">
                   <svg
@@ -94,9 +94,9 @@
                   </svg>
                 </div>
               </div>
-              <div class="item-menu-child general">
-                <div class="item-menu">Power In monitoring</div>
-                <div class="item-menu">Channels 1-7</div>
+              <div id="child-menu-channel" class="item-menu-child general d-none">
+                <div data-layout="menu-channel-power" class="item-menu">Power In monitoring</div>
+                <div data-layout="menu-channel" class="item-menu">Channels 1-7</div>
               </div>
             </div>
             <div data-layout="menu-calibration" class="item-menu">Calibration</div>
