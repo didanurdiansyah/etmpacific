@@ -8,9 +8,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&display=swap" rel="stylesheet">
     <!-- styles -->
-    <link rel="stylesheet" href="framework.css" />
-    <link rel="stylesheet" href="index2.css" />
+    <link rel="stylesheet" href="./framework.css" />
+    <!-- <link rel="stylesheet" href="https://etmpacific.herokuapp.com/etmpacific.css" /> -->
+    <link rel="stylesheet" href="https://etmpacific.herokuapp.com/lib/ToggleSwitch.css" />
+    <link rel="stylesheet" href="/switch/lib/ToggleSwitch.css" />
     <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <!-- <script src="https://etmpacific.herokuapp.com/lib/ToggleSwitch.js"></script> -->
+    <script src="/switch/lib/ToggleSwitch.js"></script>
+    <link rel="stylesheet" href="index2.css" />
   </head>
   <body>
     <div id="containter" class="containter">
@@ -997,8 +1002,11 @@
           </div>
           <div class="form-four">
             <div class="section-title">Send interval logged data (SWT2)</div>
-            <div>
-              Active a send data (port 2150) 
+            <div class="d-flex p-t-2">
+              <div style="width: 220;">
+                Active a send data (port 2150) 
+              </div>
+              <input type="checkbox" name="active_send_data" id="active-send-data" checked>
             </div>
             <div class="active-data-port">
               <div class="card card-io no-padding-left">
@@ -1090,8 +1098,11 @@
             <div class="section-title">Send interval logged data (SWT5)</div>
             <div class="active-data-port">
               <div class="card card-io">
-                <div style="margin-bottom: 10px;">Use Low Power Mode</div>
-                <div style="margin-top: 20px;">
+                <div class="m-b-5 d-flex">
+                  <div style="width: 170;">Use Low Power Mode</div>
+                  <input type="checkbox" name="use_low_power_mode" id="use-low-power-mode" checked>
+                </div>
+                <div class="m-t-3">
                   Minimun Awake Time
                   <input class="input-text-form" style="width: 60px; margin: 0px 10px;"/>
                   min

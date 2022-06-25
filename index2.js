@@ -1,4 +1,8 @@
 $(document).ready((event) => {
+    $("#active-send-data").toggleSwitch();
+    $("#use-low-power-mode").toggleSwitch();
+
+    
     $(".item-menu").click((e) => {
         const dataLayout = e.target.dataset.layout;
         $(".layout").addClass('d-none');
