@@ -469,6 +469,10 @@ body {
     .card-io {
         width: 90%;
     }
+    .card-input {
+        width: 45%;
+        margin-bottom: 20px;
+    }
 }
 
 
@@ -483,7 +487,7 @@ body {
         display: none;
     }
     .no-padding-left {
-        padding-left: 0px !important;
+        padding-left: 10px !important;
     }
     .layout {
         width: 100%;
@@ -498,6 +502,10 @@ body {
     }
     .card-io {
         width: 90%;
+    }
+    .card-input {
+        width: 40%;
+        margin-bottom: 20px;
     }
 }
 
@@ -525,6 +533,10 @@ body {
     .card-io {
         width: 45%;
     }
+    .card-input {
+        width: 30%;
+        margin-bottom: 20px;
+    }
 }
 
 @media (min-width: 900px) {
@@ -550,6 +562,10 @@ body {
     }
     .card-io {
         width: 45%;
+    }
+    .card-input {
+        width: 30%;
+        margin-bottom: 20px;
     }
 }
 
@@ -579,6 +595,13 @@ body {
     }
     .card-io {
         width: 45%;
+    }
+    .card-input {
+        width: 30%;
+        margin-bottom: 20px;
+    }
+    .no-padding-left {
+        padding-left: 0px !important;
     }
 }
 
@@ -610,9 +633,12 @@ body {
     .card-sms-amount {
         width: 48%;
     }
-
     .card-io {
         width: 30%;
+    }
+    .card-input {
+        width: 23%;
+        margin-bottom: 20px;
     }
 }
 
@@ -641,9 +667,13 @@ body {
     .card-sms-amount {
         width: 35%;
     }
-
     .card-io {
         width: 30%;
+    }
+
+    .card-input {
+        width: 23%;
+        margin-bottom: 20px;
     }
 }
 
@@ -669,11 +699,9 @@ body {
     .card-sms-amount {
         width: 35%;
     }
-
     .card-io {
         width: 30%;
     }
-
     .card-input {
         width: 23%;
         margin-bottom: 20px;
