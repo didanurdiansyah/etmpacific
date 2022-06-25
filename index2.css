@@ -1,358 +1,361 @@
+.select-numbe {
+  padding: 5px;
+  padding-top: 8px;
+  width: 20px;
+}
+
 .form-first {
-    border-bottom: 1px solid #eee;
-    padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 20px;
 }
 
 .form-second {
-    padding-top: 20px;
+  padding-top: 20px;
 }
 
 .form-first,
 .form-second {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .form-third {
-    border-top: 1px solid #eee;
-    margin-top: 30px;
-    padding-top: 20px;
+  border-top: 1px solid #eee;
+  margin-top: 30px;
+  padding-top: 20px;
 }
 
 .w--start--page--css {
-    padding: 0px;
+  padding: 0px;
 }
 
 .active-data-port {
-    margin-top: 15px;
-    display: flex;
-    flex-wrap: wrap;
+  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .card-body-unit {
-    display: flex;
-    width: 100%;
+  display: flex;
+  width: 100%;
 }
 
 .flex-x-input {
-    width: calc(100% - 40px);
+  width: calc(100% - 40px);
 }
 
 .flex-x-input-unit {
-    width: calc(100% - 40px);
+  width: calc(100% - 40px);
 }
 
 .flex-x {
-    padding-top: 10px;
-    display: flex;
-    width: 100%;
+  padding-top: 10px;
+  display: flex;
+  width: 100%;
 }
 
 .flex-x-item {
-    display: flex;
-    width: 100%;
+  display: flex;
+  width: 100%;
 }
 
 .flex-x-label {
-    padding: 15px;
-    width: 60px;
+  padding: 15px;
+  width: 60px;
 }
 
-
-
 .input-phone-number {
-    width: 180px;
-    margin-right: 10px;
+  width: 180px;
+  margin-right: 10px;
 }
 
 .input-form {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 #container {
-    overflow: auto;
+  overflow: auto;
 }
 
 .card-command,
 .card-recipitient {
-    width: 25%;
+  width: 25%;
 }
 
 .card-analogue,
 .card-message {
-    width: 35%;
+  width: 35%;
 }
 
 .card-preference,
 .card-sms-amount {
-    width: 40%;
+  width: 40%;
 }
 
 .w--end--page--css {
-    padding: 0px;
+  padding: 0px;
 }
 
 @media (min-width: 300px) {
-    .top-menu-mobile {
-        display: flex;
-    }
-    .top-menu,
-    .menu-contain {
-        display: none;
-    }
-    .layout {
-        width: 100%;
-    }
-    .no-padding-left {
-        padding: 10px !important;
-    }
-    .card-recipitient,
-    .card-message,
-    .card-command,
-    .card-analogue,
-    .card-preference,
-    .card-sms-amount {
-        width: 90%;
-    }
-    .card-io {
-        width: 90%;
-    }
-    .card-input {
-        width: 45%;
-        margin-bottom: 20px;
-    }
+  .top-menu-mobile {
+    display: flex;
+  }
+  .top-menu,
+  .menu-contain {
+    display: none;
+  }
+  .layout {
+    width: 100%;
+  }
+  .no-padding-left {
+    padding: 10px !important;
+  }
+  .card-recipitient,
+  .card-message,
+  .card-command,
+  .card-analogue,
+  .card-preference,
+  .card-sms-amount {
+    width: 90%;
+  }
+  .card-io {
+    width: 90%;
+  }
+  .card-input {
+    width: 45%;
+    margin-bottom: 20px;
+  }
 }
 
-
 @media (min-width: 700px) {
-    .top-menu-mobile {
-        display: flex;
-    }
-    .top-menu {
-        display: none;
-    }
-    .menu-contain {
-        display: none;
-    }
-    .no-padding-left {
-        padding-left: 10px !important;
-    }
-    .layout {
-        width: 100%;
-    }
-    .card-recipitient,
-    .card-message,
-    .card-command,
-    .card-analogue,
-    .card-preference,
-    .card-sms-amount {
-        width: 45%;
-    }
-    .card-io {
-        width: 90%;
-    }
-    .card-input {
-        width: 40%;
-        margin-bottom: 20px;
-    }
+  .top-menu-mobile {
+    display: flex;
+  }
+  .top-menu {
+    display: none;
+  }
+  .menu-contain {
+    display: none;
+  }
+  .no-padding-left {
+    padding-left: 10px !important;
+  }
+  .layout {
+    width: 100%;
+  }
+  .card-recipitient,
+  .card-message,
+  .card-command,
+  .card-analogue,
+  .card-preference,
+  .card-sms-amount {
+    width: 45%;
+  }
+  .card-io {
+    width: 90%;
+  }
+  .card-input {
+    width: 40%;
+    margin-bottom: 20px;
+  }
 }
 
 @media (min-width: 800px) {
-    .top-menu-mobile {
-        display: flex;
-    }
-    .top-menu {
-        display: none;
-    }
-    .menu-contain {
-        display: none;
-    }
-    .layout {
-        width: 100%;
-    }
-    .card-recipitient,
-    .card-message,
-    .card-command,
-    .card-analogue,
-    .card-preference,
-    .card-sms-amount {
-        width: 45%;
-    }
-    .card-io {
-        width: 45%;
-    }
-    .card-input {
-        width: 30%;
-        margin-bottom: 20px;
-    }
+  .top-menu-mobile {
+    display: flex;
+  }
+  .top-menu {
+    display: none;
+  }
+  .menu-contain {
+    display: none;
+  }
+  .layout {
+    width: 100%;
+  }
+  .card-recipitient,
+  .card-message,
+  .card-command,
+  .card-analogue,
+  .card-preference,
+  .card-sms-amount {
+    width: 45%;
+  }
+  .card-io {
+    width: 45%;
+  }
+  .card-input {
+    width: 30%;
+    margin-bottom: 20px;
+  }
 }
 
 @media (min-width: 900px) {
-    .top-menu-mobile {
-        display: flex;
-    }
-    .top-menu {
-        display: none;
-    }
-    .menu-contain {
-        display: none;
-    }
-    .layout {
-        width: 100%;
-    }
-    .card-recipitient,
-    .card-message,
-    .card-command,
-    .card-analogue,
-    .card-preference,
-    .card-sms-amount {
-        width: 45%;
-    }
-    .card-io {
-        width: 45%;
-    }
-    .card-input {
-        width: 30%;
-        margin-bottom: 20px;
-    }
+  .top-menu-mobile {
+    display: flex;
+  }
+  .top-menu {
+    display: none;
+  }
+  .menu-contain {
+    display: none;
+  }
+  .layout {
+    width: 100%;
+  }
+  .card-recipitient,
+  .card-message,
+  .card-command,
+  .card-analogue,
+  .card-preference,
+  .card-sms-amount {
+    width: 45%;
+  }
+  .card-io {
+    width: 45%;
+  }
+  .card-input {
+    width: 30%;
+    margin-bottom: 20px;
+  }
 }
 
 @media (min-width: 1000px) {
-    .top-menu-mobile {
-        display: flex;
-    }
-    .top-menu {
-        display: none;
-    }
-    .menu-contain-mobile {
-        display: flex;
-    }
-    .menu-contain {
-        display: none;
-    }
-    .layout {
-        width: 100%;
-    }
-    .card-recipitient,
-    .card-message,
-    .card-command,
-    .card-analogue,
-    .card-preference,
-    .card-sms-amount {
-        width: 45%;
-    }
-    .card-io {
-        width: 45%;
-    }
-    .card-input {
-        width: 30%;
-        margin-bottom: 20px;
-    }
-    .no-padding-left {
-        padding-left: 0px !important;
-    }
+  .top-menu-mobile {
+    display: flex;
+  }
+  .top-menu {
+    display: none;
+  }
+  .menu-contain-mobile {
+    display: flex;
+  }
+  .menu-contain {
+    display: none;
+  }
+  .layout {
+    width: 100%;
+  }
+  .card-recipitient,
+  .card-message,
+  .card-command,
+  .card-analogue,
+  .card-preference,
+  .card-sms-amount {
+    width: 45%;
+  }
+  .card-io {
+    width: 45%;
+  }
+  .card-input {
+    width: 30%;
+    margin-bottom: 20px;
+  }
+  .no-padding-left {
+    padding-left: 0px !important;
+  }
 }
 
 @media (min-width: 1100px) {
-    .top-menu-mobile {
-        display: flex;
-    }
-    .top-menu {
-        display: none;
-    }
-    .menu-contain-mobile {
-        display: none;
-    }
-    .menu-contain {
-        display: block;
-    }
-    .layout {
-        width: 70%;
-    }
-    .card-command,
-    .card-recipitient {
-        width: 48%;
-    }
-    .card-analogue,
-    .card-message {
-        width: 48%;
-    }
-    .card-preference,
-    .card-sms-amount {
-        width: 48%;
-    }
-    .card-io {
-        width: 30%;
-    }
-    .card-input {
-        width: 23%;
-        margin-bottom: 20px;
-    }
+  .top-menu-mobile {
+    display: flex;
+  }
+  .top-menu {
+    display: none;
+  }
+  .menu-contain-mobile {
+    display: none;
+  }
+  .menu-contain {
+    display: block;
+  }
+  .layout {
+    width: 70%;
+  }
+  .card-command,
+  .card-recipitient {
+    width: 48%;
+  }
+  .card-analogue,
+  .card-message {
+    width: 48%;
+  }
+  .card-preference,
+  .card-sms-amount {
+    width: 48%;
+  }
+  .card-io {
+    width: 30%;
+  }
+  .card-input {
+    width: 23%;
+    margin-bottom: 20px;
+  }
 }
 
 @media (min-width: 1200px) {
-    .top-menu-mobile {
-        display: none;
-    }
-    .top-menu {
-        display: flex;
-    }
-    .menu-contain-mobile {
-        display: none;
-    }
-    .menu-contain {
-        display: block;
-    }
-    .card-command,
-    .card-recipitient {
-        width: 25%;
-    }
-    .card-analogue,
-    .card-message {
-        width: 33%;
-    }
-    .card-preference,
-    .card-sms-amount {
-        width: 35%;
-    }
-    .card-io {
-        width: 30%;
-    }
+  .top-menu-mobile {
+    display: none;
+  }
+  .top-menu {
+    display: flex;
+  }
+  .menu-contain-mobile {
+    display: none;
+  }
+  .menu-contain {
+    display: block;
+  }
+  .card-command,
+  .card-recipitient {
+    width: 25%;
+  }
+  .card-analogue,
+  .card-message {
+    width: 33%;
+  }
+  .card-preference,
+  .card-sms-amount {
+    width: 35%;
+  }
+  .card-io {
+    width: 30%;
+  }
 
-    .card-input {
-        width: 23%;
-        margin-bottom: 20px;
-    }
+  .card-input {
+    width: 23%;
+    margin-bottom: 20px;
+  }
 }
 
 @media (min-width: 1300px) {
-    .top-menu {
-        display: flex;
-    }
-    .menu-contain-mobile {
-        display: none;
-    }
-    .menu-contain {
-        display: block;
-    }
-    .card-command,
-    .card-recipitient {
-        width: 25%;
-    }
-    .card-analogue,
-    .card-message {
-        width: 34%;
-    }
-    .card-preference,
-    .card-sms-amount {
-        width: 35%;
-    }
-    .card-io {
-        width: 30%;
-    }
-    .card-input {
-        width: 23%;
-        margin-bottom: 20px;
-    }
+  .top-menu {
+    display: flex;
+  }
+  .menu-contain-mobile {
+    display: none;
+  }
+  .menu-contain {
+    display: block;
+  }
+  .card-command,
+  .card-recipitient {
+    width: 25%;
+  }
+  .card-analogue,
+  .card-message {
+    width: 34%;
+  }
+  .card-preference,
+  .card-sms-amount {
+    width: 35%;
+  }
+  .card-io {
+    width: 30%;
+  }
+  .card-input {
+    width: 23%;
+    margin-bottom: 20px;
+  }
 }

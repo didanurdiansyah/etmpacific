@@ -5,14 +5,24 @@
     <title>Modal</title>
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
     <!-- styles -->
     <link rel="stylesheet" href="./framework.css" />
     <!-- <link rel="stylesheet" href="https://etmpacific.herokuapp.com/etmpacific.css" /> -->
-    <link rel="stylesheet" href="https://etmpacific.herokuapp.com/lib/ToggleSwitch.css" />
+    <link
+      rel="stylesheet"
+      href="https://etmpacific.herokuapp.com/lib/ToggleSwitch.css"
+    />
     <link rel="stylesheet" href="/switch/lib/ToggleSwitch.css" />
-    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+      integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+      crossorigin="anonymous"
+    ></script>
     <!-- <script src="https://etmpacific.herokuapp.com/lib/ToggleSwitch.js"></script> -->
     <script src="/switch/lib/ToggleSwitch.js"></script>
     <link rel="stylesheet" href="index2.css" />
@@ -21,7 +31,7 @@
     <div id="containter" class="containter">
       <div class="header">
         <div class="top-page-title">
-          Settings: 
+          Settings:
           <select class="transparant-select">
             <option>Device 1</option>
             <option>Device 2</option>
@@ -31,58 +41,101 @@
         <div class="top-menu-mobile">
           <div class="menu-mobile">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-            <path d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"/></svg>
+              <path
+                d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"
+              />
+            </svg>
           </div>
           <div class="top-menu-dropdown-mobile d-none">
-            <a data-flag="t-m-device-setting" class="item-top-menu-mobile">Device Settings</a>
-            <a data-flag="t-m-remote-setting" class="item-top-menu-mobile active">Remote Settings</a>
-            <a data-flag="t-m-fota-cota-setting" class="item-top-menu-mobile">FOTA/COTA</a>
-            <a data-flag="t-m-terminal-setting" class="item-top-menu-mobile">Terminal</a>
+            <a data-flag="t-m-device-setting" class="item-top-menu-mobile"
+              >Device Settings</a
+            >
+            <a
+              data-flag="t-m-remote-setting"
+              class="item-top-menu-mobile active"
+              >Remote Settings</a
+            >
+            <a data-flag="t-m-fota-cota-setting" class="item-top-menu-mobile"
+              >FOTA/COTA</a
+            >
+            <a data-flag="t-m-terminal-setting" class="item-top-menu-mobile"
+              >Terminal</a
+            >
           </div>
         </div>
         <div class="top-menu">
-          <a data-flag="t-m-device-setting" class="item-top-menu">Device Settings</a>
-          <a data-flag="t-m-remote-setting" class="item-top-menu active">Remote Settings</a>
-          <a data-flag="t-m-fota-cota-setting" class="item-top-menu">FOTA/COTA</a>
+          <a data-flag="t-m-device-setting" class="item-top-menu"
+            >Device Settings</a
+          >
+          <a data-flag="t-m-remote-setting" class="item-top-menu active"
+            >Remote Settings</a
+          >
+          <a data-flag="t-m-fota-cota-setting" class="item-top-menu"
+            >FOTA/COTA</a
+          >
           <a data-flag="t-m-terminal-setting" class="item-top-menu">Terminal</a>
         </div>
       </div>
-      <div id="remote-settings" class="main-layout">
+      <div id="remote-setting" class="main-layout">
         <div class="menu-contain-mobile">
-            <div data-layout="menu-general" class="item-menu-m active no-padding-left">General</div>
-            <div class="item-menu-m">
-              <div data-layout="menu-channel-parent" id="menu-channel-m" class="item-menu-parent">
-                Channel
-                <div class="navigator">
-                  <svg
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M7 10L12 15L17 10H7Z"
-                      fill="#000035"
-                      fill-opacity="0.7"
-                    />
-                  </svg>
-                </div>
-              </div>
-              <div id="child-menu-channel-m" class="item-menu-child general d-none">
-                <div class="item-menu">Power In monitoring</div>
-                <div class="item-menu">Channels 1-7</div>
+          <div
+            data-layout="menu-general"
+            class="item-menu-m active no-padding-left"
+          >
+            General
+          </div>
+          <div class="item-menu-m">
+            <div
+              data-layout="menu-channel-parent"
+              id="menu-channel-m"
+              class="item-menu-parent"
+            >
+              Channel
+              <div class="navigator">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7 10L12 15L17 10H7Z"
+                    fill="#000035"
+                    fill-opacity="0.7"
+                  />
+                </svg>
               </div>
             </div>
-            <div data-layout="menu-calibration" class="item-menu-m">Calibration</div>
-            <div data-layout="menu-communication" class="item-menu-m">Communications</div>
-            <div data-layout="menu-data-log" class="item-menu-m">Data Logging and Timer Settings</div>
+            <div
+              id="child-menu-channel-m"
+              class="item-menu-child general d-none"
+            >
+              <div class="item-menu">Power In monitoring</div>
+              <div class="item-menu">Channels 1-7</div>
+            </div>
+          </div>
+          <div data-layout="menu-calibration" class="item-menu-m">
+            Calibration
+          </div>
+          <div data-layout="menu-communication" class="item-menu-m">
+            Communications
+          </div>
+          <div data-layout="menu-data-log" class="item-menu-m">
+            Data Logging and Timer Settings
+          </div>
         </div>
         <div class="menu-contain">
           <div class="menu">
-            <div data-layout="menu-general" class="item-menu active">General</div>
+            <div data-layout="menu-general" class="item-menu active">
+              General
+            </div>
             <div class="item-menu">
-              <div data-layout="menu-channel-parent" id="menu-channel" class="item-menu-parent">
+              <div
+                data-layout="menu-channel-parent"
+                id="menu-channel"
+                class="item-menu-parent"
+              >
                 Channel
                 <div class="navigator">
                   <svg
@@ -100,14 +153,27 @@
                   </svg>
                 </div>
               </div>
-              <div id="child-menu-channel" class="item-menu-child general d-none">
-                <div data-layout="menu-channel-power" class="item-menu">Power In monitoring</div>
-                <div data-layout="menu-channel" class="item-menu">Channels 1-7</div>
+              <div
+                id="child-menu-channel"
+                class="item-menu-child general d-none"
+              >
+                <div data-layout="menu-channel-power" class="item-menu">
+                  Power In monitoring
+                </div>
+                <div data-layout="menu-channel" class="item-menu">
+                  Channels 1-7
+                </div>
               </div>
             </div>
-            <div data-layout="menu-calibration" class="item-menu">Calibration</div>
-            <div data-layout="menu-communication" class="item-menu">Communications</div>
-            <div data-layout="menu-data-log" class="item-menu">Data Logging and Timer Settings</div>
+            <div data-layout="menu-calibration" class="item-menu">
+              Calibration
+            </div>
+            <div data-layout="menu-communication" class="item-menu">
+              Communications
+            </div>
+            <div data-layout="menu-data-log" class="item-menu">
+              Data Logging and Timer Settings
+            </div>
           </div>
         </div>
         <div id="menu-general" class="layout">
@@ -120,7 +186,7 @@
               <div class="card-title-desc">Recipitients</div>
               <div>
                 <div class="flex">
-                  <div class="p-2">1</div>
+                  <div class="select-number">1</div>
                   <div class="w-auto">
                     <input
                       class="input-text-form"
@@ -132,7 +198,7 @@
                   </div>
                 </div>
                 <div class="flex">
-                  <div class="p-2">2</div>
+                  <div class="select-number">2</div>
                   <div class="w-auto">
                     <input
                       class="input-text-form"
@@ -144,7 +210,7 @@
                   </div>
                 </div>
                 <div class="flex">
-                  <div class="p-2">3</div>
+                  <div class="select-number">3</div>
                   <div class="w-auto">
                     <input
                       class="input-text-form"
@@ -156,7 +222,7 @@
                   </div>
                 </div>
                 <div class="flex">
-                  <div class="p-2">4</div>
+                  <div class="select-number">4</div>
                   <div class="w-auto">
                     <input
                       class="input-text-form"
@@ -168,7 +234,7 @@
                   </div>
                 </div>
                 <div class="flex">
-                  <div class="p-2">5</div>
+                  <div class="select-number">5</div>
                   <div class="w-auto">
                     <input
                       class="input-text-form"
@@ -216,7 +282,7 @@
               <div class="card-title bold">Init AT/ET - Command Table</div>
               <div class="card-body">
                 <div class="flex">
-                  <div class="p-2">1</div>
+                  <div class="select-number">1</div>
                   <div class="w-auto">
                     <select class="select-form">
                       <option class="no-select">Select the command</option>
@@ -224,7 +290,7 @@
                   </div>
                 </div>
                 <div class="flex">
-                  <div class="p-2">2</div>
+                  <div class="select-number">2</div>
                   <div class="w-auto">
                     <select class="select-form">
                       <option class="no-select">Select the command</option>
@@ -232,7 +298,7 @@
                   </div>
                 </div>
                 <div class="flex">
-                  <div class="p-2">3</div>
+                  <div class="select-number">3</div>
                   <div class="w-auto">
                     <select class="select-form">
                       <option class="no-select">Select the command</option>
@@ -240,7 +306,7 @@
                   </div>
                 </div>
                 <div class="flex">
-                  <div class="p-2">4</div>
+                  <div class="select-number">4</div>
                   <div class="w-auto">
                     <select class="select-form">
                       <option class="no-select">Select the command</option>
@@ -248,7 +314,7 @@
                   </div>
                 </div>
                 <div class="flex">
-                  <div class="p-2">5</div>
+                  <div class="select-number">5</div>
                   <div class="w-auto">
                     <select class="select-form">
                       <option class="no-select">Select the command</option>
@@ -312,27 +378,37 @@
                 <div class="card-body-unit">
                   <div class="flex-x-item">
                     <div class="flex-x-label">Unit:</div>
-                    <div class="flex-x-input-unit"><input class="input-text-form"></div>
+                    <div class="flex-x-input-unit">
+                      <input class="input-text-form" />
+                    </div>
                   </div>
                 </div>
                 <div class="flex-x">
                   <div class="flex-x-item">
                     <div class="flex-x-label">X1</div>
-                    <div class="flex-x-input"><input class="input-text-form"></div>
+                    <div class="flex-x-input">
+                      <input class="input-text-form" />
+                    </div>
                   </div>
                   <div class="flex-x-item">
                     <div class="flex-x-label">Y1</div>
-                    <div class="flex-x-input"><input class="input-text-form"></div>
+                    <div class="flex-x-input">
+                      <input class="input-text-form" />
+                    </div>
                   </div>
                 </div>
                 <div class="flex-x">
                   <div class="flex-x-item">
                     <div class="flex-x-label">X2</div>
-                    <div class="flex-x-input"><input class="input-text-form"></div>
+                    <div class="flex-x-input">
+                      <input class="input-text-form" />
+                    </div>
                   </div>
                   <div class="flex-x-item">
                     <div class="flex-x-label">Y2</div>
-                    <div class="flex-x-input"><input class="input-text-form"></div>
+                    <div class="flex-x-input">
+                      <input class="input-text-form" />
+                    </div>
                   </div>
                 </div>
                 <div>
@@ -347,27 +423,37 @@
                 <div class="card-body-unit">
                   <div class="flex-x-item">
                     <div class="flex-x-label">Unit:</div>
-                    <div class="flex-x-input-unit"><input class="input-text-form"></div>
+                    <div class="flex-x-input-unit">
+                      <input class="input-text-form" />
+                    </div>
                   </div>
                 </div>
                 <div class="flex-x">
                   <div class="flex-x-item">
                     <div class="flex-x-label">X1</div>
-                    <div class="flex-x-input"><input class="input-text-form"></div>
+                    <div class="flex-x-input">
+                      <input class="input-text-form" />
+                    </div>
                   </div>
                   <div class="flex-x-item">
                     <div class="flex-x-label">Y1</div>
-                    <div class="flex-x-input"><input class="input-text-form"></div>
+                    <div class="flex-x-input">
+                      <input class="input-text-form" />
+                    </div>
                   </div>
                 </div>
                 <div class="flex-x">
                   <div class="flex-x-item">
                     <div class="flex-x-label">X2</div>
-                    <div class="flex-x-input"><input class="input-text-form"></div>
+                    <div class="flex-x-input">
+                      <input class="input-text-form" />
+                    </div>
                   </div>
                   <div class="flex-x-item">
                     <div class="flex-x-label">Y2</div>
-                    <div class="flex-x-input"><input class="input-text-form"></div>
+                    <div class="flex-x-input">
+                      <input class="input-text-form" />
+                    </div>
                   </div>
                 </div>
                 <div>
@@ -382,27 +468,37 @@
                 <div class="card-body-unit">
                   <div class="flex-x-item">
                     <div class="flex-x-label">Unit:</div>
-                    <div class="flex-x-input-unit"><input class="input-text-form"></div>
+                    <div class="flex-x-input-unit">
+                      <input class="input-text-form" />
+                    </div>
                   </div>
                 </div>
                 <div class="flex-x">
                   <div class="flex-x-item">
                     <div class="flex-x-label">X1</div>
-                    <div class="flex-x-input"><input class="input-text-form"></div>
+                    <div class="flex-x-input">
+                      <input class="input-text-form" />
+                    </div>
                   </div>
                   <div class="flex-x-item">
                     <div class="flex-x-label">Y1</div>
-                    <div class="flex-x-input"><input class="input-text-form"></div>
+                    <div class="flex-x-input">
+                      <input class="input-text-form" />
+                    </div>
                   </div>
                 </div>
                 <div class="flex-x">
                   <div class="flex-x-item">
                     <div class="flex-x-label">X2</div>
-                    <div class="flex-x-input"><input class="input-text-form"></div>
+                    <div class="flex-x-input">
+                      <input class="input-text-form" />
+                    </div>
                   </div>
                   <div class="flex-x-item">
                     <div class="flex-x-label">Y2</div>
-                    <div class="flex-x-input"><input class="input-text-form"></div>
+                    <div class="flex-x-input">
+                      <input class="input-text-form" />
+                    </div>
                   </div>
                 </div>
                 <div>
@@ -419,27 +515,37 @@
                 <div class="card-body-unit">
                   <div class="flex-x-item">
                     <div class="flex-x-label">Unit:</div>
-                    <div class="flex-x-input-unit"><input class="input-text-form"></div>
+                    <div class="flex-x-input-unit">
+                      <input class="input-text-form" />
+                    </div>
                   </div>
                 </div>
                 <div class="flex-x">
                   <div class="flex-x-item">
                     <div class="flex-x-label">X1</div>
-                    <div class="flex-x-input"><input class="input-text-form"></div>
+                    <div class="flex-x-input">
+                      <input class="input-text-form" />
+                    </div>
                   </div>
                   <div class="flex-x-item">
                     <div class="flex-x-label">Y1</div>
-                    <div class="flex-x-input"><input class="input-text-form"></div>
+                    <div class="flex-x-input">
+                      <input class="input-text-form" />
+                    </div>
                   </div>
                 </div>
                 <div class="flex-x">
                   <div class="flex-x-item">
                     <div class="flex-x-label">X2</div>
-                    <div class="flex-x-input"><input class="input-text-form"></div>
+                    <div class="flex-x-input">
+                      <input class="input-text-form" />
+                    </div>
                   </div>
                   <div class="flex-x-item">
                     <div class="flex-x-label">Y2</div>
-                    <div class="flex-x-input"><input class="input-text-form"></div>
+                    <div class="flex-x-input">
+                      <input class="input-text-form" />
+                    </div>
                   </div>
                 </div>
                 <div>
@@ -454,27 +560,37 @@
                 <div class="card-body-unit">
                   <div class="flex-x-item">
                     <div class="flex-x-label">Unit:</div>
-                    <div class="flex-x-input-unit"><input class="input-text-form"></div>
+                    <div class="flex-x-input-unit">
+                      <input class="input-text-form" />
+                    </div>
                   </div>
                 </div>
                 <div class="flex-x">
                   <div class="flex-x-item">
                     <div class="flex-x-label">X1</div>
-                    <div class="flex-x-input"><input class="input-text-form"></div>
+                    <div class="flex-x-input">
+                      <input class="input-text-form" />
+                    </div>
                   </div>
                   <div class="flex-x-item">
                     <div class="flex-x-label">Y1</div>
-                    <div class="flex-x-input"><input class="input-text-form"></div>
+                    <div class="flex-x-input">
+                      <input class="input-text-form" />
+                    </div>
                   </div>
                 </div>
                 <div class="flex-x">
                   <div class="flex-x-item">
                     <div class="flex-x-label">X2</div>
-                    <div class="flex-x-input"><input class="input-text-form"></div>
+                    <div class="flex-x-input">
+                      <input class="input-text-form" />
+                    </div>
                   </div>
                   <div class="flex-x-item">
                     <div class="flex-x-label">Y2</div>
-                    <div class="flex-x-input"><input class="input-text-form"></div>
+                    <div class="flex-x-input">
+                      <input class="input-text-form" />
+                    </div>
                   </div>
                 </div>
                 <div>
@@ -489,27 +605,37 @@
                 <div class="card-body-unit">
                   <div class="flex-x-item">
                     <div class="flex-x-label">Unit:</div>
-                    <div class="flex-x-input-unit"><input class="input-text-form"></div>
+                    <div class="flex-x-input-unit">
+                      <input class="input-text-form" />
+                    </div>
                   </div>
                 </div>
                 <div class="flex-x">
                   <div class="flex-x-item">
                     <div class="flex-x-label">X1</div>
-                    <div class="flex-x-input"><input class="input-text-form"></div>
+                    <div class="flex-x-input">
+                      <input class="input-text-form" />
+                    </div>
                   </div>
                   <div class="flex-x-item">
                     <div class="flex-x-label">Y1</div>
-                    <div class="flex-x-input"><input class="input-text-form"></div>
+                    <div class="flex-x-input">
+                      <input class="input-text-form" />
+                    </div>
                   </div>
                 </div>
                 <div class="flex-x">
                   <div class="flex-x-item">
                     <div class="flex-x-label">X2</div>
-                    <div class="flex-x-input"><input class="input-text-form"></div>
+                    <div class="flex-x-input">
+                      <input class="input-text-form" />
+                    </div>
                   </div>
                   <div class="flex-x-item">
                     <div class="flex-x-label">Y2</div>
-                    <div class="flex-x-input"><input class="input-text-form"></div>
+                    <div class="flex-x-input">
+                      <input class="input-text-form" />
+                    </div>
                   </div>
                 </div>
                 <div>
@@ -520,7 +646,10 @@
           </div>
           <div class="form-third">
             <div>
-              <input class="input-text-form input-phone-number" placeholder="Phone number">
+              <input
+                class="input-text-form input-phone-number"
+                placeholder="Phone number"
+              />
               <button class="button1">Send all CH Values</button>
             </div>
           </div>
@@ -533,19 +662,13 @@
           <div class="form-first">
             <div class="card no-padding-left card-io">
               <div class="card-title">IP Adress 1</div>
-              <div class="card-body">
-
-              </div>
+              <div class="card-body"></div>
             </div>
             <div class="card card-io">
               <div class="card-title">IP Adress 2</div>
-              <div class="card-body">
-
-              </div>
+              <div class="card-body"></div>
             </div>
-            <div class="card card-io">
-            
-            </div>
+            <div class="card card-io"></div>
           </div>
           <div class="form-second">
             <div class="section-title">ISP Dial up Login</div>
@@ -650,8 +773,12 @@
                     name="status"
                     value="on-timed"
                   />
-                  <label for="html">Toggle SensFeed(ch30)
-                    <input class="input-text-form" style="width: 50px; margin: 0px 10px">
+                  <label for="html"
+                    >Toggle SensFeed(ch30)
+                    <input
+                      class="input-text-form"
+                      style="width: 50px; margin: 0px 10px"
+                    />
                     sec. before logging
                   </label>
                 </div>
@@ -664,7 +791,11 @@
               <div class="card-body">
                 <div>
                   Data log interval:
-                  <input class="input-text-form" value="10" style="width: 60px; margin-left: 10px;" />
+                  <input
+                    class="input-text-form"
+                    value="10"
+                    style="width: 60px; margin-left: 10px"
+                  />
                 </div>
                 <div class="checkbox">
                   <input
@@ -1003,10 +1134,13 @@
           <div class="form-four">
             <div class="section-title">Send interval logged data (SWT2)</div>
             <div class="d-flex p-t-2">
-              <div style="width: 220;">
-                Active a send data (port 2150) 
-              </div>
-              <input type="checkbox" name="active_send_data" id="active-send-data" checked>
+              <div style="width: 220">Active a send data (port 2150)</div>
+              <input
+                type="checkbox"
+                name="active_send_data"
+                id="active-send-data"
+                checked
+              />
             </div>
             <div class="active-data-port">
               <div class="card card-io no-padding-left">
@@ -1041,8 +1175,12 @@
                 <div class="card-title bold">Periodicity</div>
                 <div>
                   <div>
-                    Data log interval: 
-                    <input class="input-text-form" value="10" style="width: 55px;"/>
+                    Data log interval:
+                    <input
+                      class="input-text-form"
+                      value="10"
+                      style="width: 55px"
+                    />
                   </div>
                   <div class="checkbox">
                     <input
@@ -1067,7 +1205,9 @@
                 </div>
               </div>
               <div class="card card-io">
-                <div class="card-title bold">Data packets to send (port 2150)</div>
+                <div class="card-title bold">
+                  Data packets to send (port 2150)
+                </div>
                 <div>
                   <div style="margin: 15px 0px">[#21] Format</div>
                   <div class="checkbox">
@@ -1099,12 +1239,20 @@
             <div class="active-data-port">
               <div class="card card-io">
                 <div class="m-b-5 d-flex">
-                  <div style="width: 170;">Use Low Power Mode</div>
-                  <input type="checkbox" name="use_low_power_mode" id="use-low-power-mode" checked>
+                  <div style="width: 170">Use Low Power Mode</div>
+                  <input
+                    type="checkbox"
+                    name="use_low_power_mode"
+                    id="use-low-power-mode"
+                    checked
+                  />
                 </div>
                 <div class="m-t-3">
                   Minimun Awake Time
-                  <input class="input-text-form" style="width: 60px; margin: 0px 10px;"/>
+                  <input
+                    class="input-text-form"
+                    style="width: 60px; margin: 0px 10px"
+                  />
                   min
                 </div>
               </div>
@@ -1112,7 +1260,10 @@
                 <div class="card-title bold">Periodicity</div>
                 <div>
                   Data log interval
-                  <input class="input-text-form" style="width: 60px; margin: 0px 10px;"/>
+                  <input
+                    class="input-text-form"
+                    style="width: 60px; margin: 0px 10px"
+                  />
                 </div>
                 <div>
                   <div class="checkbox">
@@ -1139,7 +1290,7 @@
               </div>
               <div class="card card-io">
                 <div class="analog-card-io">Analogue Alarm Check Period</div>
-                <div style="margin-top: 10px;">
+                <div style="margin-top: 10px">
                   <div class="checkbox">
                     <input
                       type="radio"
@@ -1151,10 +1302,7 @@
                     <label for="ip-address">Wake up if Send Req</label>
                   </div>
                   <div class="checkbox">
-                    <input
-                      type="radio"
-                      id="IP2"
-                      class="checkbox-input"                    />
+                    <input type="radio" id="IP2" class="checkbox-input" />
                     <label for="ip-address">Sleep whe Send Req.is Done</label>
                   </div>
                 </div>
@@ -1162,6 +1310,15 @@
             </div>
           </div>
         </div>
+      </div>
+      <div id="device-setting" class="main-layout d-none">
+        <div>Device Setting</div>
+      </div>
+      <div id="fota-cota-setting" class="main-layout d-none">
+        <div>FOTA/COTA</div>
+      </div>
+      <div id="terminal-setting" class="main-layout d-none">
+        <div>Terminal</div>
       </div>
     </div>
     <script src="index2.js"></script>

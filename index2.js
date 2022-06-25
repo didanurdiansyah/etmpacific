@@ -24,7 +24,11 @@ $(document).ready((event) => {
         const dataLayout = e.target.dataset.flag;
         $('.item-top-menu-mobile').removeClass('active')
         $(".item-top-menu").removeClass('active');
+
         $('*[data-flag="'+dataLayout+'"]').addClass('active')
+        const id = dataLayout.replace('t-m-', '');
+        $('.main-layout').addClass('d-none')
+        $('#'+id).removeClass('d-none')
     })
     $(".menu-mobile").click((e) => {
         if($('.top-menu-dropdown-mobile').hasClass('d-none')) {
