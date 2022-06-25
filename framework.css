@@ -2,8 +2,14 @@
     --primary-color: #164BBD;
     --primary-light-color: #164bbd10;
     --black-color: #000035;
+    --blue-color: #164BBD;
+
+    --white-color: #fff;
+    --white2-color: #f3f3f3;
+    --white3-color: #eeeeee;
 
     --background-color-field: #eeeeee;
+    --background-border-color-field: #aaaaaa;
     --line-color: #eeeeee;
 }
 
@@ -69,8 +75,8 @@ body {
 .header {
     margin-bottom: 30px;
     height: 70px;
-    border: 1px solid #eee;
-    background-color: #fff;
+    border: 1px solid var(--white3-color);
+    background-color: var(--white-color);
 }
 
 .transparant-select {
@@ -108,13 +114,13 @@ body {
     padding: 20px 30px;
     position: relative;
     top:1px;
-    color: #000;
+    color: var(--black-color);
     cursor: pointer;
 }
 
 .item-top-menu.active,
 .item-top-menu:hover {
-    background-color: #164bbd10;
+    background-color: var(--primary-light-color);
     border-bottom: 4px solid var(--primary-color);
 }
 
@@ -122,16 +128,16 @@ body {
     position: absolute;
     width: 280px;
     right: 11px;
-    background-color: #fff;
+    background-color: var(--white-color);
     top: 80px;
-    box-shadow: 0px 0px 10px #eee;
+    box-shadow: 0px 0px 10px var(--white3-color);
 }
 
 .item-top-menu-mobile {
     display: block;
     padding: 20px 50px;
     font-size: 20px;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid var(--white3-color);
     border-left: 4px solid transparent;
 }
 
@@ -153,13 +159,13 @@ body {
 .main-layout {
     display: flex;
     flex-wrap: wrap;
-    border: 1px solid #eee;
+    border: 1px solid var(--white3-color);
     background-color: #fff;
 }
 
 .menu {
     padding: 20px;
-    border-right: 1px solid #eee;
+    border-right: 1px solid var(--white3-color);
     height: 80vh;
 }
 
@@ -172,7 +178,7 @@ body {
     width: 100%;
     padding: 20px;
     display: flex;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid var(--white3-color);
 }
 
 .layout {
@@ -188,7 +194,7 @@ body {
     padding: 10px 12px;
     font-weight: 700;
     font-size: 16px;
-    color: #000;
+    color: var(--black-color);
 }
 
 .item-menu-m.active,
@@ -202,7 +208,7 @@ body {
     padding: 5px 2px;
     font-size: 16px;
     font-weight: 700;
-    color: #000;
+    color: var(--black-color);
 }
 
 .item-menu:hover {
@@ -261,28 +267,28 @@ body {
     margin-top: 5px;
     font-size: 12px;
     float: right;
-    color: #444;
+    color: var(--black-color);
 }
 
 .info {
     font-size: 12px;
-    color: #444;
+    color: var(--black-color);
     margin-top: 5px;
 }
 
 .input-text-form {
     border: 0px;
     padding: 12px 15px;
-    background-color: #eee;
-    border-bottom: 0.5px solid #aaa;
+    background-color: var(--background-color-field);
+    border-bottom: 0.5px solid var(--background-border-color-field);
     width: 100%;
 }
 
 .input-text-area {
     border: 0px;
     padding: 5px 7px;
-    background-color: #eee;
-    border-bottom: 0.5px solid #aaa;
+    background-color: var(--background-color-field);
+    border-bottom: 0.5px solid var(--background-border-color-field);
     width: 100%;
 }
 
@@ -293,8 +299,8 @@ body {
 .select-form {
     border: 0px;
     padding: 10px 12px;
-    background-color: #eee;
-    border-bottom: 1px solid #aaa;
+    background-color: var(--background-color-field);
+    border-bottom: 1px solid var(--background-border-color-field);
     width: 100%;
 }
 
@@ -326,14 +332,14 @@ body {
 
 .button1 {
     background-color: var(--primary-color);
-    color: #fff;
+    color: var(--white-color);
     border: 0px;
     border-radius: 5px;
     padding: 10px 15px;
     cursor: pointer;
 }
 
-.button:hover {
+.button1:hover {
     background-color: #164bbdb9;
     color: #fff;
 }
@@ -354,7 +360,7 @@ body {
     float: right;
     margin-top: 18px;
     cursor: pointer;
-    color: --primary-color;
+    color: var(--primary-color);
 }
 
 .btn-link:hover {
