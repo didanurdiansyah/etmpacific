@@ -4,12 +4,12 @@
     font-size: 15px;
 }
 
-.channel-labs-cols {
-    width: 20%;
+.channel-checkbox {
+    width: 50px;
 }
 
-.type-cols {
-    width: 20%;
+.name-cols {
+    width: 30%;
 }
 
 .value-cols {
@@ -36,4 +36,8 @@
     float: right;
     margin-right: 20px;
     margin-top: 5px;
+}
+
+.table {
+    margin-top: 20px;
 }
