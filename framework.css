@@ -7,6 +7,8 @@
   --white-color: #fff;
   --white2-color: #f3f3f3;
   --white3-color: #eeeeee;
+  --white4-color: #cccccc;
+  --white5-color: #999999;
 
   --background-color-field: #eeeeee;
   --background-border-color-field: #aaaaaa;
@@ -37,6 +39,10 @@ body {
   color: var(--primary-color);
 }
 
+.color-light {
+  color: var(--white4-color);
+}
+
 .d-none {
   display: none !important;
 }
@@ -61,6 +67,10 @@ body {
 
 .border-bottom-grey {
   border-bottom: 2px solid var(--white3-color);
+}
+
+.border-top-grey {
+  border-top: 1px solid var(--white4-color);
 }
 
 .m-r-1 {
@@ -500,13 +510,38 @@ body {
   width: 100%;
 }
 
-.btn-link {
+.float-right {
   float: right;
-  margin-top: 18px;
+}
+
+.btn-link {
+  margin-top: 10px;
   cursor: pointer;
   color: var(--primary-color);
 }
 
 .btn-link:hover {
   color: #082f82;
+}
+
+.btn-link-light {
+  margin-top: 10px;
+  cursor: pointer;
+  color: var(--white5-color);
+}
+
+.btn-link-light:hover {
+  color: #082f82;
+}
+
+.select-number {
+  padding: 12px;
+}
+
+.btn-collapse {
+  cursor: pointer;
+}
+
+.btn-collapse:hover {
+  filter: invert(14%) sepia(38%) saturate(5675%) hue-rotate(214deg) brightness(87%) contrast(96%);
 }

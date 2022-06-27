@@ -29,3 +29,11 @@
     padding: 10px;
     background-color: var(--white2-color);
 }
+
+.info-right {
+    font-size: 10px;
+    color: #aaa;
+    float: right;
+    margin-right: 20px;
+    margin-top: 5px;
+}
