@@ -1,0 +1,39 @@
+.subscription {
+    width: calc(100% - 480px);
+    padding: 30px;
+    font-size: 15px;
+}
+
+.channel-labs-cols {
+    width: 20%;
+}
+
+.type-cols {
+    width: 20%;
+}
+
+.value-cols {
+    width: 20%;
+}
+
+.units-cols {
+    width: 20%;
+}
+
+.tags-cols {
+    width: 20%;
+}
+
+.left-widget {
+    width: 400px;
+    padding: 10px;
+    background-color: var(--white2-color);
+}
+
+.info-right {
+    font-size: 10px;
+    color: #aaa;
+    float: right;
+    margin-right: 20px;
+    margin-top: 5px;
+}
