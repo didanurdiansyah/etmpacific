@@ -5,23 +5,32 @@
 }
 
 .channel-checkbox {
-    width: 50px;
+    width: 40px;
 }
 
 .name-cols {
-    width: 30%;
+    width: 25%;
 }
 
-.value-cols {
-    width: 20%;
+.date-cols {
+    width: 16%;
 }
 
-.units-cols {
-    width: 20%;
+.type-cols {
+    width: 15%;
 }
 
-.tags-cols {
-    width: 20%;
+.comment-cols {
+    width: 22%;
+}
+
+.subscription-cols {
+    width: 100px;
+}
+
+.action-cols {
+    width: 60px;
+    margin: auto 0px
 }
 
 .left-widget {
@@ -40,4 +49,76 @@
 
 .table {
     margin-top: 20px;
+    color: #3f3f3fa6;
+    font-size: 13px;
+}
+
+.border-grey {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.btn-primary-light {
+    padding: 14px 20px;
+    padding-left: 30px;
+    background-color: #164BBD10;
+    color: #000035;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 12px;
+    position: relative;
+    width: 130px;
+}
+
+.p-absolute {
+    position: absolute;
+}
+
+.bar-chart {
+    background-color: #eee;
+    height: 10px;
+    border-radius: 5px;
+    width: 100%;
+}
+.bar-chart-length {
+    background-color: #164BBD;
+    height: 10px;
+    border-radius: 5px;
+}
+
+.label-bar-chart {
+    font-weight: 100;
+}
+
+.currency-sub {
+    margin-top: 20px;
+    margin-right: 5px;
+}
+
+.period-sub {
+    margin-top: 20px;
+}
+
+.card-widget-sub {
+    width: calc(50% - 50px);
+}
+
+.thin {
+    font-weight: 100;
+}
+
+.widget-currency {
+    width: calc(100% - 180px);
+    display: flex;
+}
+
+
+@media (min-width: 1200px) {
+
+}
+
+@media (min-width: 1300px) {
+    .widget-currency {
+        width: calc(100% - 180px);
+    }
 }
