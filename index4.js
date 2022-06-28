@@ -17,4 +17,49 @@ $(document).ready((event) => {
   $("#subscription-10").toggleSwitch();
   $("#subscription-11").toggleSwitch();
   $("#subscription-12").toggleSwitch();
+
+
+  Highcharts.chart('chart-line', {
+    chart: {
+      backgroundColor: '#FCFFC500',
+      type: 'line',
+    },
+    title: {
+        text: ''
+    },
+    yAxis: {
+      labels: {
+        enabled: false
+      },
+      title: {
+        text: ''
+      }
+    },
+    credits: {
+      enabled: false
+    },
+    xAxis: {
+      labels: {
+        enabled: false
+      }
+    },
+
+    legend: {
+      enabled: false
+    },
+
+    plotOptions: {
+        series: {
+            label: {
+                connectorAllowed: false
+            },
+            pointStart: 2010
+        }
+    },
+
+    series: [{
+        name: 'Installation',
+        data: [43934, 52503, 57177, 69658, 97031, 119931, 137133, 154175]
+    }],
+})
 });

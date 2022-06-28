@@ -21,6 +21,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="/switch/lib/ToggleSwitch.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
     <!-- styles -->
     <link rel="stylesheet" href="framework.css" />
     <link rel="stylesheet" href="index4.css" />
@@ -31,7 +32,7 @@
         <div class="subscription">
           <div class="page-title">Subscriptions</div>
           <div class="p-t-2 d-flex">
-            <div class="card-widget-sub border-grey p-3 m-r-2">
+            <div class="card-widget-sub border-grey p-3 mr-widget">
               <div class="d-flex">
                 <div class="btn-primary-light">
                   <span class="p-absolute" style="left: 7px; top: 10px;">
@@ -436,7 +437,7 @@
                 <div class="m-ed">Week</div>
                 <div class="m-ed">Month</div>
               </div>
-              <div style="height: 150px"></div>
+              <div id="chart-line" style="height: 150px; width: 100%;"></div>
               <div class="d-flex border-top-grey w-100">
                 <div class="color-primary p-align-center" style="font-size: 20px;">25</div>
                 <div class="m-l-2 p-align-center">emails were sentin a week</div>
