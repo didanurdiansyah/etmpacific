@@ -10,10 +10,10 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500;700&display=swap"
       rel="stylesheet"
     />
-    <link
+    <!-- <link
       rel="stylesheet"
       href="https://etmpacific.herokuapp.com/lib/ToggleSwitch.css"
-    />
+    /> -->
     <link rel="stylesheet" href="/switch/lib/ToggleSwitch.css" />
     <script
       src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
@@ -346,61 +346,76 @@
             </div>
             <div class="txt-r color-light m-b-2">1 230 credits</div>
           </div>
-          <div class="card m-t-1 d-flex">
-            <div style="width: 73%;">ET Command</div>
-            <div style="width: 17%;">
-              <input
-                type="checkbox"
-                name="active_et_command"
-                id="active-et-command"
-                checked
-              />
+          <div class="card m-t-1">
+            <div class="d-flex">
+              <div style="width: 73%;">ET Command</div>
+              <div style="width: 17%;">
+                <input
+                  type="checkbox"
+                  name="active_et_command"
+                  id="active-et-command"
+                />
+              </div>
+              <div class="txt-r" style="width: 10%;">
+                <span class="btn-collapse" id="et-command">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.41 8.59L12 13.17L16.59 8.59L18 10L12 16L6 10L7.41 8.59Z" fill="#000035" fill-opacity="0.75"/>
+                  </svg>
+                </span>
+              </div>
             </div>
-            <div class="txt-r" style="width: 10%;">
-              <span class="btn-collapse" id="">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M7.41 8.59L12 13.17L16.59 8.59L18 10L12 16L6 10L7.41 8.59Z" fill="#000035" fill-opacity="0.75"/>
-                </svg>
-              </span>
-            </div>
-          </div>
-          <div class="card m-t-1 d-flex">
-            <div class="" style="width: 73%;">Call</div>
-            <div style="width: 17%;">
-              <input
-                type="checkbox"
-                name="active_call"
-                id="active-call"
-                checked
-              />
-            </div>
-            <div class="txt-r" style="width: 10%;">
-              <span class="btn-collapse" id="">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M7.41 8.59L12 13.17L16.59 8.59L18 10L12 16L6 10L7.41 8.59Z" fill="#000035" fill-opacity="0.75"/>
-                </svg>
-              </span>
+            <div data-collapse="et-command" class="d-none">
+              Test
             </div>
           </div>
-          <div class="card m-t-1 d-flex">
-            <div class="" style="width: 73%;">
-              SMS
-              <span class="info-right">3 creadits each</span>
+          <div class="card m-t-1">
+            <div class="d-flex">
+              <div class="" style="width: 73%;">Call</div>
+              <div style="width: 17%;">
+                <input
+                  type="checkbox"
+                  name="active_call"
+                  id="active-call"
+                  checked
+                />
+              </div>
+              <div class="txt-r" style="width: 10%;">
+                <span class="btn-collapse" id="call">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.41 8.59L12 13.17L16.59 8.59L18 10L12 16L6 10L7.41 8.59Z" fill="#000035" fill-opacity="0.75"/>
+                  </svg>
+                </span>
+              </div>
             </div>
-            <div style="width: 17%;">
-              <input
-                type="checkbox"
-                name="active_sms"
-                id="active-sms"
-                checked
-              />
+            <div data-collapse="call" class="d-none">
+              <div>Test</div>
+              <div>Erro</div>
             </div>
-            <div class="txt-r" style="width: 10%;">
-              <span class="btn-collapse" id="">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M7.41 8.59L12 13.17L16.59 8.59L18 10L12 16L6 10L7.41 8.59Z" fill="#000035" fill-opacity="0.75"/>
-                </svg>
-              </span>
+          </div>
+          <div class="card m-t-1">
+            <div class="d-flex">
+              <div class="" style="width: 73%;">
+                SMS
+                <span class="info-right">3 creadits each</span>
+              </div>
+              <div style="width: 17%;">
+                <input
+                  type="checkbox"
+                  name="active_sms"
+                  id="active-sms"
+                  checked
+                />
+              </div>
+              <div class="txt-r" style="width: 10%;">
+                <span class="btn-collapse" id="sms">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.41 8.59L12 13.17L16.59 8.59L18 10L12 16L6 10L7.41 8.59Z" fill="#000035" fill-opacity="0.75"/>
+                  </svg>
+                </span>
+              </div>
+            </div>
+            <div data-collapse="sms" class="d-none">
+              sms
             </div>
           </div>
           <div class="card m-t-1">
@@ -418,51 +433,53 @@
                 />
               </div>
               <div class="txt-r" style="width: 10%;">
-                <span class="btn-collapse" id="">
+                <span class="btn-collapse" id="email">
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M7.41 8.59L12 13.17L16.59 8.59L18 10L12 16L6 10L7.41 8.59Z" fill="#000035" fill-opacity="0.75"/>
                   </svg>
                 </span>
               </div>
             </div>
-            <div class="d-flex-no-warp bg-primary-light m-t-1 p-1">
-              <div class="color-primary p-align-center" style="font-size: 26px;">615</div>
-              <div class="p-align-center m-l-5">available emails amount</div>
-              <div class="color-primary p-align-center txt-r m-l-2" style="width: 30%;">Deposit</div>
-            </div>
-            <div class="m-t-1 p-1 bg-light d-flex" style="height: 200px;">
-              <div style="font-size: 10px; width: 70%;">History of usage</div>
-              <div class="d-flex" style="font-size: 10px;">
-                <div class="m-ed">Day</div>
-                <div class="m-ed">Week</div>
-                <div class="m-ed">Month</div>
+            <div data-collapse="email" class="">
+              <div class="d-flex-no-waremailp bg-primary-light m-t-1 p-1">
+                <div class="color-primary p-align-center" style="font-size: 26px;">615</div>
+                <div class="p-align-center m-l-5">available emails amount</div>
+                <div class="color-primary p-align-center txt-r m-l-2" style="width: 30%;">Deposit</div>
               </div>
-              <div id="chart-line" style="height: 150px; width: 100%;"></div>
-              <div class="d-flex border-top-grey w-100">
-                <div class="color-primary p-align-center" style="font-size: 20px;">25</div>
-                <div class="m-l-2 p-align-center">emails were sentin a week</div>
+              <div class="m-t-1 p-1 bg-light d-flex" style="height: 200px;">
+                <div style="font-size: 10px; width: 70%;">History of usage</div>
+                <div class="d-flex" style="font-size: 10px;">
+                  <div class="m-ed">Day</div>
+                  <div class="m-ed">Week</div>
+                  <div class="m-ed">Month</div>
+                </div>
+                <div id="chart-line" style="height: 150px; width: 100%;"></div>
+                <div class="d-flex border-top-grey w-100">
+                  <div class="color-primary p-align-center" style="font-size: 20px;">25</div>
+                  <div class="m-l-2 p-align-center">emails were sentin a week</div>
+                </div>
               </div>
-            </div>
-            <div class="p-2 d-flex-justify-between no-padding-left">
-              <div class="bold">Set email limits</div>
-              <input
-                type="checkbox"
-                name="active_send_data"
-                id="set-email-limit"
-                checked
-              />
-            </div>
-            <div class="d-flex-no-warp p-t-1">
-              <input class="input-text-form m-r-2" type="number" placeholder="Enter a number" style="width: calc(100% - 155px);"/>
-              <select class="select-form" style="width: 140px;">
-                <option>per day</option>
-                <option>per week</option>
-                <option>per month</option>
-              </select>
-            </div>
-            <div class="btn-link bold">+ Add more limits</div>
-            <div style="height: 40px;">
-              <a class="btn-link-light float-right">Save</a>
+              <div class="p-2 d-flex-justify-between no-padding-left">
+                <div class="bold">Set email limits</div>
+                <input
+                  type="checkbox"
+                  name="active_send_data"
+                  id="set-email-limit"
+                  checked
+                />
+              </div>
+              <div class="d-flex-no-warp p-t-1">
+                <input class="input-text-form m-r-2" type="number" placeholder="Enter a number" style="width: calc(100% - 155px);"/>
+                <select class="select-form" style="width: 140px;">
+                  <option>per day</option>
+                  <option>per week</option>
+                  <option>per month</option>
+                </select>
+              </div>
+              <div class="btn-link bold">+ Add more limits</div>
+              <div style="height: 40px;">
+                <a class="btn-link-light float-right">Save</a>
+              </div>
             </div>
           </div>
         </div>

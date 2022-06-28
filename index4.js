@@ -18,6 +18,17 @@ $(document).ready((event) => {
   $("#subscription-11").toggleSwitch();
   $("#subscription-12").toggleSwitch();
 
+  $(".btn-collapse").click((e) => {
+    const id = e.currentTarget.id;
+    console.log('id', id)
+    if($('*[data-collapse="' + id + '"]').hasClass("d-none")) {
+      $('*[data-collapse="' + id + '"]').removeClass("d-none");
+      $('*[data-collapse="' + id + '"]').addClass("d-show");
+    } else {
+      $('*[data-collapse="' + id + '"]').removeClass("d-show");
+      $('*[data-collapse="' + id + '"]').addClass("d-none");
+    }
+  });
 
   Highcharts.chart('chart-line', {
     chart: {
