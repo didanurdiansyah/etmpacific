@@ -1,5 +1,5 @@
 .subscription {
-    width: calc(100% - 480px);
+    width: calc(100% - 520px);
     padding: 10px;
     font-size: 15px;
     background-color: var(--white2-color);
@@ -124,7 +124,7 @@
 
 @media (min-width: 300px) {
     .widget-currency {
-        width: calc(100% - 180px);
+        width: calc(100% - 130px);
     }
     .subscription {
         width: 100%;
@@ -143,7 +143,8 @@
         width: 210%;
     }
     .widget-content {
-        width: 90%; display: flex;
+        width: 155px; 
+        display: flex;
     }
     .channel-checkbox {
         width: 30px
@@ -158,13 +159,13 @@
 
 @media (min-width: 900px) {
     .widget-currency {
-        width: calc(100% - 180px);
+        width: calc(100% - 130px);
     }
     .subscription {
         width: 100%;
     }
     .left-widget {
-        width: 400px;
+        width: 480px;
     }
     .card-widget-sub {
         width: 100%;
@@ -177,10 +178,10 @@
         width: calc(100% - 180px);
     }
     .subscription {
-        width: calc(100% - 480px);
+        width: calc(100% - 520px);
     }
     .left-widget {
-        width: 400px;
+        width: 480px;
     }
     .name-cols {
         width: 20%;
@@ -208,10 +209,10 @@
         width: calc(100% - 180px);
     }
     .subscription {
-        width: calc(100% - 480px);
+        width: calc(100% - 520px);
     }
     .left-widget {
-        width: 400px;
+        width: 480px;
     }
     .name-cols {
         width: 19%;
@@ -239,7 +240,7 @@
         width: calc(100% - 180px);
     }
     .left-widget {
-        width: 440px;
+        width: 480px;
     }
     .card-widget-sub {
         width: calc(50% - 50px);
