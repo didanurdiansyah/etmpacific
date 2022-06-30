@@ -12,6 +12,11 @@
     border: 1px solid #eee;
 }
 
+.dark-mode .subscription-con {
+    background-color: #333;
+    color: #f5f5f5;
+}
+
 .channel-checkbox {
     width: 40px;
 }
@@ -38,6 +43,10 @@
     position: absolute;
     margin-left: 5px;
     margin-top: -4px;
+}
+
+.dark-mode .date-cols svg {
+    filter: brightness(100);
 }
 
 .type-cols {
@@ -158,6 +167,20 @@
 .widget-currency {
     width: calc(100% - 180px);
     display: flex;
+}
+
+.page-link.active {
+    background-color: #164BBD;
+    color: #fff;
+}
+
+.float-btn-right {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #fff;
+    padding: 10px;
+    z-index: 100;
 }
 
 @media (min-width: 300px) {

@@ -28,6 +28,14 @@ body {
   width: 100% !important;
 }
 
+.dark-mode.container {
+  margin: 0;
+  padding: 0;
+  width: 100% !important;
+  background-color: #333;
+}
+
+
 .bg-light {
   background-color: var(--white3-color);
 }
