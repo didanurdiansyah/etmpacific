@@ -25,8 +25,9 @@ function parseData(page, res) {
 
 function parseHTMLTable(result) {
   const res = result.map((e) => {
-    const radio = e.subscription ? `checkedu` : null;
+    const radio = e.subscription ? `checked` : null;
     const id = e.id < 10 ? "0" + e.id : e.id;
+    const comment = e.comment === null ? "-" : e.comment;
     return (
       `<div class="border-bottom-grey d-flex-no-warp p-t-1 p-b-2">
     <div class="channel-checkbox">
@@ -42,7 +43,7 @@ function parseHTMLTable(result) {
       e.date_add +
       `</div>
     <div class="comment-cols">` +
-      e.comment +
+      comment +
       `</div>
     <div class="subscription-cols">
       <input
@@ -77,6 +78,10 @@ function changePage(page) {
 }
 
 $(document).ready(() => {
+  $(".tumbler__wrapper").click("click", (_) =>
+    document.body.classList.toggle("dark-mode")
+  );
+
   fetchDataTable().then((result) => {
     const total_page = Math.floor(result.length / 10) + 1;
     const page = 0;
@@ -118,13 +123,6 @@ $(document).ready(() => {
   $("#active-call").toggleSwitch();
   $("#active-sms").toggleSwitch();
   $("#active-email").toggleSwitch();
-
-  $("#dark-mode").click(() => {
-    $("#container").addClass("dark-mode");
-  });
-  $("#light-mode").click(() => {
-    $("#container").removeClass("dark-mode");
-  });
 
   $(".btn-collapse").click((e) => {
     const id = e.currentTarget.id;
