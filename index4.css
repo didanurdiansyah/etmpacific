@@ -8,6 +8,8 @@
 .subscription-con {
     padding: 20px;
     background-color: #fff;
+    min-height: 893px;
+    border: 1px solid #eee;
 }
 
 .channel-checkbox {
@@ -15,27 +17,62 @@
 }
 
 .name-cols {
+    padding-top: 3px;
     width: 25%;
     padding-right: 5px;
 }
 
+.name-cols svg {
+    position: absolute;
+    margin-left: 5px;
+    margin-top: -4px;
+}
+
 .date-cols {
+    margin-top: 3px;
     width: 16%;
     padding-right: 5px;
 }
 
+.date-cols svg {
+    position: absolute;
+    margin-left: 5px;
+    margin-top: -4px;
+}
+
 .type-cols {
+    margin-top: 3px;
     width: 15%;
     padding-right: 5px;
 }
 
+.type-cols svg {
+    position: absolute;
+    margin-left: 5px;
+    margin-top: -4px;
+}
+
 .comment-cols {
+    padding-top: 3px;
     width: 22%;
     padding-right: 5px;
 }
 
+.comment-cols svg {
+    position: absolute;
+    margin-left: 5px;
+    margin-top: -4px;
+}
+
 .subscription-cols {
+    padding-top: 3px;
     width: 100px;
+}
+
+.subscription-cols svg {
+    position: absolute;
+    margin-left: 5px;
+    margin-top: -4px;
 }
 
 .action-cols {
@@ -47,6 +84,7 @@
     width: 400px;
     padding: 10px;
     background-color: var(--white2-color);
+    border: 1px solid #eee;
 }
 
 .info-right {
@@ -77,7 +115,7 @@
     margin-bottom: 10px;
     font-size: 12px;
     position: relative;
-    width: 130px;
+    width: 180px;
 }
 
 .p-absolute {
@@ -178,7 +216,7 @@
         width: calc(100% - 180px);
     }
     .subscription {
-        width: calc(100% - 520px);
+        width: calc(100% - 480px);
     }
     .left-widget {
         width: 480px;
@@ -209,7 +247,7 @@
         width: calc(100% - 180px);
     }
     .subscription {
-        width: calc(100% - 520px);
+        width: calc(100% - 480px);
     }
     .left-widget {
         width: 480px;
@@ -243,7 +281,7 @@
         width: 480px;
     }
     .card-widget-sub {
-        width: calc(50% - 50px);
+        width: calc(50% - 10px);
     }
     .space-left {
         width: 70%;
@@ -280,7 +318,7 @@
         width: calc(100% - 180px);
     }
     .card-widget-sub {
-        width: calc(50% - 50px);
+        width: calc(50% - 10px);
     }
 }
 
@@ -289,6 +327,6 @@
         width: calc(100% - 180px);
     }
     .card-widget-sub {
-        width: calc(50% - 50px);
+        width: calc(50% - 10px);
     }
 }

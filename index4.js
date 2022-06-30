@@ -20,8 +20,8 @@ $(document).ready((event) => {
 
   $(".btn-collapse").click((e) => {
     const id = e.currentTarget.id;
-    console.log('id', id)
-    if($('*[data-collapse="' + id + '"]').hasClass("d-none")) {
+    console.log("id", id);
+    if ($('*[data-collapse="' + id + '"]').hasClass("d-none")) {
       $('*[data-collapse="' + id + '"]').removeClass("d-none");
       $('*[data-collapse="' + id + '"]').addClass("d-show");
     } else {
@@ -30,47 +30,49 @@ $(document).ready((event) => {
     }
   });
 
-  Highcharts.chart('chart-line', {
+  Highcharts.chart("chart-line", {
     chart: {
-      backgroundColor: '#FCFFC500',
-      type: 'line',
+      backgroundColor: "#FCFFC500",
+      type: "line",
     },
     title: {
-        text: ''
+      text: "",
     },
     yAxis: {
       labels: {
-        enabled: false
+        enabled: false,
       },
       title: {
-        text: ''
-      }
+        text: "",
+      },
     },
     credits: {
-      enabled: false
+      enabled: false,
     },
     xAxis: {
       labels: {
-        enabled: false
-      }
+        enabled: false,
+      },
     },
 
     legend: {
-      enabled: false
+      enabled: false,
     },
 
     plotOptions: {
-        series: {
-            label: {
-                connectorAllowed: false
-            },
-            pointStart: 2010
-        }
+      series: {
+        label: {
+          connectorAllowed: false,
+        },
+        pointStart: 2010,
+      },
     },
 
-    series: [{
-        name: 'Installation',
-        data: [43934, 52503, 57177, 69658, 97031, 119931, 137133, 154175]
-    }],
-})
+    series: [
+      {
+        name: "Installation",
+        data: [43934, 52503, 57177, 69658, 97031, 119931, 137133, 154175],
+      },
+    ],
+  });
 });

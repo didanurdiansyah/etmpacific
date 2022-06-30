@@ -38,6 +38,15 @@ $(document).ready((event) => {
       $(".top-menu-dropdown-mobile").addClass("d-none");
     }
   });
+  $("#menu-channel-m").click(() => {
+    if ($("#child-menu-channel-m").hasClass("d-none")) {
+      $("#child-menu-channel-m").removeClass("d-none");
+      $("#child-menu-channel-m").addClass("d-show");
+    } else {
+      $("#child-menu-channel-m").removeClass("d-show");
+      $("#child-menu-channel-m").addClass("d-none");
+    }
+  });
   $(".item-top-menu-mobile").click((e) => {
     const dataLayout = e.target.dataset.flag;
     $(".item-top-menu-mobile").removeClass("active");
@@ -55,11 +64,15 @@ $(document).ready((event) => {
   });
   $(document).click(function (e) {
     if ($(e.target).closest(".menu-mobile").length == 0) {
-      // .closest can help you determine if the element
-      // or one of its ancestors is #menuscontainer
       if ($(".top-menu-dropdown-mobile").hasClass("d-show")) {
         $(".top-menu-dropdown-mobile").removeClass("d-show");
         $(".top-menu-dropdown-mobile").addClass("d-none");
+      }
+    }
+    if ($(e.target).closest("#menu-channel-m").length == 0) {
+      if ($(".item-menu-child-m").hasClass("d-show")) {
+        $(".item-menu-child-m").removeClass("d-show");
+        $(".item-menu-child-m").addClass("d-none");
       }
     }
   });

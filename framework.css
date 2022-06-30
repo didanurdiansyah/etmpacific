@@ -22,6 +22,12 @@ body {
   color: var(--black-color);
 }
 
+.container {
+  margin: 0;
+  padding: 0;
+  width: 100% !important;
+}
+
 .bg-light {
   background-color: var(--white3-color);
 }
@@ -263,7 +269,7 @@ body {
 }
 
 .item-top-menu {
-  font-size: 22px;
+  font-size: 2vw;
   padding: 20px 30px;
   position: relative;
   top: 1px;
@@ -310,6 +316,7 @@ body {
 }
 
 .main-layout {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   border: 1px solid var(--white3-color);
@@ -357,6 +364,10 @@ body {
   cursor: pointer;
 }
 
+.item-menu-m {
+  
+}
+
 .item-menu {
   padding: 5px 2px;
   font-size: 16px;
@@ -386,7 +397,16 @@ body {
 
 .item-menu-child {
   display: block;
+  background-color: #fff;
   margin-left: 10px;
+}
+
+.item-menu-child-m {
+  position: absolute;
+  display: block;
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid #eee;
 }
 
 .card {
@@ -467,6 +487,7 @@ body {
 
 .checkbox {
   padding: 5px;
+  margin: 0px;
 }
 
 .checkbox-input {
@@ -521,6 +542,7 @@ body {
 
 .btn-link:hover {
   color: #082f82;
+  text-decoration: none;
 }
 
 .btn-link-light {
@@ -547,4 +569,35 @@ body {
 
 .no-margin {
   margin: 0px;
+}
+
+.modal-open .container-fluid, .modal-open  .container {
+  -webkit-filter: blur(5px) grayscale(90%);
+  filter: blur(3px);
+}
+
+.modal-backdrop {
+  background-color: rgba(0,0,0,0.05);
+}
+
+.checkbox label {
+  padding-left: 5px;
+}
+
+.modal-content {
+  border: 0px;
+}
+
+.checkbox input[type=checkbox] {
+  margin: 0px;
+  top: 1px;
+  position: relative;
+}
+
+.pagination {
+  margin: 0px;
+}
+
+.pagination>li>a, .pagination>li>span {
+  color: var(--primary-color)
 }
