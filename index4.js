@@ -1,4 +1,7 @@
 let resultAPI = [];
+let sort = "asc";
+let current_page = 0;
+let column = "name";
 
 async function fetchDataTable() {
   let res = [];
@@ -24,8 +27,9 @@ function parseData(page, res) {
 }
 
 function parseHTMLTable(result) {
+  console.log(result);
   const res = result.map((e) => {
-    const radio = e.subscription ? `checked` : null;
+    const radio = e.subscription ? `checked` : "";
     const id = e.id < 10 ? "0" + e.id : e.id;
     const comment = e.comment === null ? "-" : e.comment;
     return (
@@ -72,16 +76,30 @@ function parseHTMLTable(result) {
   });
 }
 
+function sortColumn(col) {
+  if (sort === "asc") {
+    resultAPI = resultAPI.sort((a, b) => {
+      if (b[col] > a[col]) return -1;
+      if (b[col] < a[col]) return 1;
+      return 0;
+    });
+    sort = "desc";
+  } else {
+    resultAPI = resultAPI.sort((a, b) => {
+      if (b[col] < a[col]) return -1;
+      if (b[col] > a[col]) return 1;
+      return 0;
+    });
+    sort = "asc";
+  }
+}
+
 function changePage(page) {
   const data = parseData(page, resultAPI);
   parseHTMLTable(data);
 }
 
 $(document).ready(() => {
-  $(".tumbler__wrapper").click("click", (_) =>
-    document.body.classList.toggle("dark-mode")
-  );
-
   fetchDataTable().then((result) => {
     const total_page = Math.floor(result.length / 10) + 1;
     const page = 0;
@@ -115,6 +133,22 @@ $(document).ready(() => {
       const id = e.currentTarget.id;
       $(".page-link").removeClass("active");
       $("#" + id).addClass("active");
+    });
+
+    $(".col-table").click((e) => {
+      const column = e.currentTarget.dataset.col;
+
+      if ($('*[data-col="' + column + '"]').hasClass("sort-asc")) {
+        $('*[data-col="' + column + '"]').removeClass("sort-asc");
+        $('*[data-col="' + column + '"]').addClass("sort-desc");
+      } else {
+        $('*[data-col="' + column + '"]').removeClass("sort-desc");
+        $('*[data-col="' + column + '"]').addClass("sort-asc");
+      }
+      sortColumn(column);
+      changePage(0);
+      $(".page-link").removeClass("active");
+      $("#page-0").addClass("active");
     });
   });
 
