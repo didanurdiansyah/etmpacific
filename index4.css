@@ -153,24 +153,6 @@
     cursor: pointer;
 }
 
-.dark-mode .btn-primary-light {
-    color: #aaa;
-    border: 1px solid #164BBD;
-    transition: color 0.5s linear;
-}
-
-.dark-mode .info {
-    color: #888;
-}
-
-.dark-mode .pagination>li>a {
-    background-color: #eee;
-    border: 1px solid #eee;
-    color: #164BBD;
-    transition: color 0.5s linear;
-    transition: background-color 0.5s linear;
-}
-
 .p-absolute {
     position: absolute;
 }
@@ -192,7 +174,7 @@
 }
 
 .currency-sub {
-    margin-top: 20px;
+    margin-top: 26px;
     margin-right: 5px;
 }
 
@@ -211,14 +193,6 @@
 .widget-currency {
     width: calc(100% - 180px);
     display: flex;
-}
-
-.page-link.active:focus,
-.pagination>li>a:hover,
-.page-link.active {
-    background-color: #164BBD;
-    border-color: #164BBD;
-    color: #fff;
 }
 
 .float-btn-right {

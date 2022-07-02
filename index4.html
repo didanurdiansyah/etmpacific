@@ -17,7 +17,7 @@
     <script src="/jquery-3.6.0.js"></script>
     
     <script src="/bootstrap.min.js"></script>
-    <script src="/jquery-ui.js"></script>
+    <!-- <script src="/jquery-ui.js"></script> -->
     <script src="/switch/lib/ToggleSwitch.js"></script>
     <script src="/highcharts.js"></script>
     <!-- styles -->
@@ -280,7 +280,7 @@
                   <option>per month</option>
                 </select>
               </div>
-              <button type="button" id="mymodal" data-toggle="modal" data-target="#myModal" class="btn-link bold">+ Add more limits</button>
+              <button type="button" class="btn-link bold" data-toggle="modal" data-target="#exampleModal">+ Add more limits</button>
               <div class="p-2" style="height: 50px;">
                 <a class="btn-link-light float-right">Save</a>
               </div>
@@ -294,10 +294,10 @@
       </div>
     </div>
     <!-- Modal -->
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
+        <div id="my-modal" class="modal-content">
+          <div id="my-modal-header" class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
             <h4 class="modal-title" id="myModalLabel">Edit subscription plan: Device 00001</h4>
           </div>
