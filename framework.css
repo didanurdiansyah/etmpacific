@@ -40,6 +40,10 @@ body {
   background-color: var(--white3-color);
 }
 
+.dark-mode .bg-light {
+  background-color: #444;
+}
+
 .bg-primary-light {
   background-color: #164bbd18;
 }
@@ -81,6 +85,10 @@ body {
 
 .border-bottom-primary {
   border-bottom: 2px solid var(--primary-color);
+}
+
+.dark-mode .border-bottom-primary {
+  border-bottom: 2px solid #aaa;
 }
 
 .border-bottom-grey {
@@ -481,6 +489,12 @@ body {
   width: 100%;
 }
 
+.dark-mode .input-text-form {
+  background-color: #ccc;
+  border-bottom: 0.5px solid #eee;
+  color: #fff;
+}
+
 .input-text-area {
   border: 0px;
   padding: 5px 7px;
@@ -535,6 +549,11 @@ body {
   border-radius: 5px;
   padding: 10px 15px;
   cursor: pointer;
+}
+
+.dark-mode .button1 {
+  background-color: #082f82;
+  color: #999;
 }
 
 .button1:hover {
@@ -635,9 +654,22 @@ body {
   color: var(--primary-color)
 }
 
+.btn-primary-light {
+  padding: 14px 20px;
+  padding-left: 30px;
+  background-color: #164BBD10;
+  color: #000035;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-size: 12px;
+  position: relative;
+  width: 180px;
+  cursor: pointer;
+}
+
 .dark-mode .btn-primary-light {
   color: #aaa;
-  border: 1px solid #164BBD;
+  border: 1px solid #425274;
   transition: color 0.5s linear;
 }
 

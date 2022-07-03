@@ -13,7 +13,7 @@
 .subscription-con {
     padding: 20px;
     background-color: #fff;
-    min-height: 983px;
+    min-height: 923px;
     border: 1px solid #eee;
 }
 
@@ -140,18 +140,7 @@
     border-radius: 10px;
 }
 
-.btn-primary-light {
-    padding: 14px 20px;
-    padding-left: 30px;
-    background-color: #164BBD10;
-    color: #000035;
-    border-radius: 5px;
-    margin-bottom: 10px;
-    font-size: 12px;
-    position: relative;
-    width: 180px;
-    cursor: pointer;
-}
+
 
 .p-absolute {
     position: absolute;
@@ -163,10 +152,19 @@
     border-radius: 5px;
     width: 100%;
 }
+
+.dark-mode .bar-chart {
+    background-color: #777;
+}
+
 .bar-chart-length {
     background-color: #164BBD;
     height: 10px;
     border-radius: 5px;
+}
+
+.dark-mode .bar-chart-length {
+    background-color: #aaa;
 }
 
 .label-bar-chart {
@@ -179,7 +177,7 @@
 }
 
 .period-sub {
-    margin-top: 20px;
+    margin-top: 27px;
 }
 
 .card-widget-sub {
