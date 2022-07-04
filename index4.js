@@ -154,6 +154,33 @@ $(document).ready(() => {
     });
   });
 
+  $("#modal-add").click(() => {
+    $("#modal").addClass("modal-open");
+    $("#container").addClass("modal-open");
+    $("#exampleModal").css("display", "block");
+    setTimeout(() => {
+      $("#exampleModal").addClass("in");
+    }, 200);
+    $("#modal").append(`<div class="modal-backdrop fade in"></div>`);
+  });
+
+  $(document).click(function (e) {
+    console.log(e);
+  });
+
+  $(".modal, .modal .close").click(() => {
+    $("#exampleModal").removeClass("in");
+    setTimeout(() => {
+      $(".modal-backdrop").remove();
+      $("#exampleModal").css("display", "none");
+      $("#container").removeClass("modal-open");
+    }, 200);
+  });
+
+  $(".modal .modal-dialog").click((e) => {
+    e.stopPropagation();
+  });
+
   $("#set-email-limit").toggleSwitch();
   $("#active-et-command").toggleSwitch();
   $("#active-call").toggleSwitch();

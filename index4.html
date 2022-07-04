@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="/switch/lib/ToggleSwitch.css" />
     <script src="/jquery-3.6.0.js"></script>
     
-    <script src="/bootstrap.min.js"></script>
+    <!-- <script src="/bootstrap.min.js"></script> -->
     <!-- <script src="/jquery-ui.js"></script> -->
     <script src="/switch/lib/ToggleSwitch.js"></script>
     <script src="/highcharts.js"></script>
@@ -25,7 +25,7 @@
     <link rel="stylesheet" href="index4.css" />
   </head>
   <body>
-    <div id="container" class="container  ">
+    <div id="container" class="container">
       <div class="main-layout">
         <div class="subscription">
           <div class="subscription-con">
@@ -222,8 +222,20 @@
               </div>
             </div>
             <div data-collapse="sms" class="d-none">
-              <div id="chart-sms" class="m-t-2" style="height: 300px;">
-                Chart
+              <div class="m-t-1 p-1 bg-light d-flex">
+                <div style="font-size: 10px; width: 70%;">History of usage</div>
+                <div class="d-flex" style="font-size: 10px;">
+                  <div class="m-ed">Day</div>
+                  <div class="m-ed">Week</div>
+                  <div class="m-ed">Month</div>
+                </div>
+                <div id="chart-sms" class="m-t-2" style="height: 150px;">
+                  Chart
+                </div>
+                <div class="d-flex border-top-grey w-100 p-t-1">
+                  <div class="color-primary p-align-center" style="font-size: 20px;">25</div>
+                  <div class="m-l-2 p-align-center">emails were sentin a week</div>
+                </div>
               </div>
             </div>
           </div>
@@ -285,7 +297,7 @@
                   <option>per month</option>
                 </select>
               </div>
-              <button type="button" class="btn-link bold" data-toggle="modal" data-target="#exampleModal">+ Add more limits</button>
+              <button type="button" id="modal-add" class="btn-link bold" data-toggle="modal" data-target="#exampleModal">+ Add more limits</button>
               <div class="p-2" style="height: 50px;">
                 <a class="btn-link-light float-right">Save</a>
               </div>
@@ -298,101 +310,103 @@
       <div id="switch-dark-mode" class="tumbler__wrapper">
       </div>
     </div>
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div id="my-modal" class="modal-content">
-          <div id="my-modal-header" class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title" id="myModalLabel">Edit subscription plan: Device 00001</h4>
-          </div>
-          <div class="modal-body">
-            <div class="row">
-              <div class="col-md-6">
-                <select class="select-form" name="basic" id="">
-                  <option value="">Basic +EX</option>
-                </select>
-              </div>
-              <div class="col-md-6">
-                Package time period:
-                <input class="input-text-form" style="width: 130px;" />
-              </div>
+    <div id="modal">
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div id="my-modal" class="modal-content">
+            <div id="my-modal-header" class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title">Edit subscription plan: Device 00001</h4>
             </div>
-            <div class="m-t-2">
-              SMS package
-            </div>
-            <div class="row">
-              <div class="col-md-6">
-                <select class="select-form m-t-2" name="basic" id="">
-                  <option value="">SIM provider</option>
-                </select>
-                <input class="input-text-form m-t-2" placeholder="SIM ID" style="width: 100%;" />
-              </div>
-              <div class="col-md-6 m-t-2">
-                <div class="w-auto">
-                  <textarea
-                    rows="4"
-                    class="input-text-area textarea-form"
-                    placeholder="Short Comment"
-                    width="100%"
-                  ></textarea>
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-md-6">
+                  <select class="select-form" name="basic" id="">
+                    <option value="">Basic +EX</option>
+                  </select>
                 </div>
-                <div class="info-char">0/150</div>
-              </div>
-            </div>
-            <div>
-              Start date
-            </div>
-            <div class="row">
-              <div class="col-md-6">
-                <div class="checkbox">
-                  <input
-                    type="radio"
-                    id="start-now"
-                    class="checkbox-input"
-                    name="start"
-                    value="now"
-                  />
-                  <label for="html">Start now</label>
-                </div>
-                <div class="checkbox">
-                  <input
-                    type="radio"
-                    id="start-when-active"
-                    class="checkbox-input"
-                    name="start"
-                    value="client"
-                  />
-                  <label for="html">Start when client activates</label>
-                </div>
-                <div class="checkbox">
-                  <input
-                    type="checkbox"
-                    id="start-when-active"
-                    class="checkbox-input"
-                    name="start"
-                    value="client"
-                  />
-                  <label for="html">Auto Deactivate</label>
+                <div class="col-md-6">
+                  Package time period:
+                  <input class="input-text-form" style="width: 130px;" />
                 </div>
               </div>
-              <div class="col-md-6">
-                <div class="bg-primary-light p-2">
-                  <div class="d-flex">
-                    <div style="width: 50%;">Start date:</div>
-                    <div style="width: 50%;">5th August 2021</div>
+              <div class="m-t-2">
+                SMS package
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <select class="select-form m-t-2" name="basic" id="">
+                    <option value="">SIM provider</option>
+                  </select>
+                  <input class="input-text-form m-t-2" placeholder="SIM ID" style="width: 100%;" />
+                </div>
+                <div class="col-md-6 m-t-2">
+                  <div class="w-auto">
+                    <textarea
+                      rows="4"
+                      class="input-text-area textarea-form"
+                      placeholder="Short Comment"
+                      width="100%"
+                    ></textarea>
                   </div>
-                  <div class="d-flex m-t-1">
-                    <div style="width: 50%;">End date:</div>
-                    <div style="width: 50%;">5th August 2022</div>
+                  <div class="info-char">0/150</div>
+                </div>
+              </div>
+              <div>
+                Start date
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="checkbox">
+                    <input
+                      type="radio"
+                      id="start-now"
+                      class="checkbox-input"
+                      name="start"
+                      value="now"
+                    />
+                    <label for="html">Start now</label>
+                  </div>
+                  <div class="checkbox">
+                    <input
+                      type="radio"
+                      id="start-when-active"
+                      class="checkbox-input"
+                      name="start"
+                      value="client"
+                    />
+                    <label for="html">Start when client activates</label>
+                  </div>
+                  <div class="checkbox">
+                    <input
+                      type="checkbox"
+                      id="start-when-active"
+                      class="checkbox-input"
+                      name="start"
+                      value="client"
+                    />
+                    <label for="html">Auto Deactivate</label>
                   </div>
                 </div>
+                <div class="col-md-6">
+                  <div class="bg-primary-light p-2">
+                    <div class="d-flex">
+                      <div style="width: 50%;">Start date:</div>
+                      <div style="width: 50%;">5th August 2021</div>
+                    </div>
+                    <div class="d-flex m-t-1">
+                      <div style="width: 50%;">End date:</div>
+                      <div style="width: 50%;">5th August 2022</div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="txt-r p-3">
-            <button type="button" class="btn-link bold">add</button>
-            <button type="button" class="button1">Create</button>
+            <div class="txt-r p-3">
+              <button type="button" class="btn-link bold">add</button>
+              <button type="button" class="button1">Create</button>
+            </div>
           </div>
         </div>
       </div>
