@@ -217,6 +217,144 @@ $(document).ready(() => {
     ],
   });
 
+  Highcharts.chart("chart-et-command", {
+    chart: {
+      backgroundColor: "#FCFFC500",
+      type: "line",
+    },
+    title: {
+      text: "",
+    },
+    yAxis: {
+      labels: {
+        enabled: false,
+      },
+      title: {
+        text: "",
+      },
+    },
+    credits: {
+      enabled: false,
+    },
+    xAxis: {
+      labels: {
+        enabled: false,
+      },
+    },
+
+    legend: {
+      enabled: false,
+    },
+
+    plotOptions: {
+      series: {
+        label: {
+          connectorAllowed: false,
+        },
+        pointStart: 2010,
+      },
+    },
+
+    series: [
+      {
+        name: "Installation",
+        data: [43934, 52503, 57177, 69658, 97031, 119931, 137133, 154175],
+      },
+    ],
+  });
+
+  Highcharts.chart("chart-call", {
+    chart: {
+      backgroundColor: "#FCFFC500",
+      type: "line",
+    },
+    title: {
+      text: "",
+    },
+    yAxis: {
+      labels: {
+        enabled: false,
+      },
+      title: {
+        text: "",
+      },
+    },
+    credits: {
+      enabled: false,
+    },
+    xAxis: {
+      labels: {
+        enabled: false,
+      },
+    },
+
+    legend: {
+      enabled: false,
+    },
+
+    plotOptions: {
+      series: {
+        label: {
+          connectorAllowed: false,
+        },
+        pointStart: 2010,
+      },
+    },
+
+    series: [
+      {
+        name: "Installation",
+        data: [43934, 52503, 57177, 69658, 97031, 119931, 137133, 154175],
+      },
+    ],
+  });
+
+  Highcharts.chart("chart-sms", {
+    chart: {
+      backgroundColor: "#FCFFC500",
+      type: "line",
+    },
+    title: {
+      text: "",
+    },
+    yAxis: {
+      labels: {
+        enabled: false,
+      },
+      title: {
+        text: "",
+      },
+    },
+    credits: {
+      enabled: false,
+    },
+    xAxis: {
+      labels: {
+        enabled: false,
+      },
+    },
+
+    legend: {
+      enabled: false,
+    },
+
+    plotOptions: {
+      series: {
+        label: {
+          connectorAllowed: false,
+        },
+        pointStart: 2010,
+      },
+    },
+
+    series: [
+      {
+        name: "Installation",
+        data: [43934, 52503, 57177, 69658, 97031, 119931, 137133, 154175],
+      },
+    ],
+  });
+
   // $("#add-more-limit").click((e) => {
   //   const data = e.currentTarget.dataset;
   //   const target = data.target;
