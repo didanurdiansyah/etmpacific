@@ -258,7 +258,7 @@
   
 @media (min-width: 300px) {
     .widget-currency {
-        width: calc(100% - 130px);
+        width: calc(100% - 180px);
     }
     .subscription {
         width: 100%;
